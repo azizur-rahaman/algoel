@@ -1,0 +1,12 @@
+# robots.txt for Algoel
+# Allow Google app-ads.txt crawler
+User-agent: Google-adstxt
+Disallow:
+
+User-agent: Mediapartners-Google
+Disallow:
+
+User-agent: *
+Allow: /
+
+Sitemap: https://algoel.com/sitemap.xml
