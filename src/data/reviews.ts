@@ -1,0 +1,88 @@
+import { TestimonialReview } from '@/types';
+
+export const REVIEWS_DATA: TestimonialReview[] = [
+  {
+    id: 'rev-1',
+    author: 'Dr. Evelyn Vance',
+    country: 'United States',
+    flag: '🇺🇸',
+    avatarText: 'EV',
+    rating: 5,
+    title: 'OmniFlow replaced four separate desktop tools for me',
+    review:
+      'As a neurosurgeon running a clinical research lab, my schedule is chaotic. OmniFlow’s on-device processing and contextual timeline feel like science fiction. The fact that it never uploads my patient schedule or memos to a third-party cloud is the reason our hospital approved it. Truly 10/10.',
+    appName: 'OmniFlow AI',
+    platform: 'Apple App Store',
+    date: 'February 2025',
+  },
+  {
+    id: 'rev-2',
+    author: 'Kenji Takahashi',
+    country: 'Japan',
+    flag: '🇯🇵',
+    avatarText: 'KT',
+    rating: 5,
+    title: 'The film grain simulation is indistinguishable from 35mm film',
+    review:
+      'I shoot on an ARRI Alexa Mini for cinema work and an iPhone 16 Pro for documentary scouting. PrismLens Pro with custom LUTs and anamorphic de-squeeze is the most remarkable mobile camera tool I have ever tested. The metal shader performance is silky smooth even in 4K ProRes 60fps.',
+    appName: 'PrismLens Pro',
+    platform: 'Apple App Store',
+    date: 'January 2025',
+  },
+  {
+    id: 'rev-3',
+    author: 'Marcus Lindqvist',
+    country: 'Sweden',
+    flag: '🇸🇪',
+    avatarText: 'ML',
+    rating: 5,
+    title: 'AuraPulse is light years ahead of other health trackers',
+    review:
+      'The morning HRV autonomic recovery index is spot on. It predicted my onset of flu two full days before symptoms showed up. The UI is gorgeous, minimalist, and doesn’t barrage you with annoying notifications. A masterclass in software engineering.',
+    appName: 'AuraPulse',
+    platform: 'Google Play Store',
+    date: 'March 2025',
+  },
+  {
+    id: 'rev-4',
+    author: 'Elena Rostova',
+    country: 'Germany',
+    flag: '🇩🇪',
+    avatarText: 'ER',
+    rating: 5,
+    title: 'VaultKey Zero: The only password vault I actually trust',
+    review:
+      'No cloud master key vulnerabilities. Everything stays right inside the device hardware enclave. The offline QR sync between my MacBook and Pixel 9 is ingenious. In an era where every company suffers database leaks, Algoel got this 100% right.',
+    appName: 'VaultKey Zero',
+    platform: 'Google Play Store',
+    date: 'November 2024',
+  },
+  {
+    id: 'rev-5',
+    author: 'David Chen',
+    country: 'Singapore',
+    flag: '🇸🇬',
+    avatarText: 'DC',
+    rating: 5,
+    title: 'SonicWave binaural recording quality blew my sound team away',
+    review:
+      'Plugged an external 32-bit float stereo pair into my phone using SonicWave Studio for an outdoor film set in Bali. The background noise suppression and spatial positioning felt like a dedicated \$2,000 Sound Devices field recorder. Unbelievable.',
+    appName: 'SonicWave Studio',
+    platform: 'Apple App Store',
+    date: 'December 2024',
+  },
+  {
+    id: 'rev-6',
+    author: 'Camilla Moreau',
+    country: 'France',
+    flag: '🇫🇷',
+    avatarText: 'CM',
+    rating: 5,
+    title: 'Chronos Flow cured my afternoon brain fog',
+    review:
+      'The ultradian rhythm 90-minute focus loops with the subtle dynamic island indicator have revolutionized how I write novels. It gently nudges me to stand up and breathe before mental fatigue hits. Algoel apps have a soul.',
+    appName: 'Chronos Flow',
+    platform: 'Apple App Store',
+    date: 'January 2025',
+  },
+];

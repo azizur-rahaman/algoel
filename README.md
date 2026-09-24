@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Algoel — Premium Mobile App Studio & Digital Publisher
 
-## Getting Started
+A landing page built for **Algoel**, a software studio and mobile app publisher releasing category-defining applications on the **Apple App Store** and **Google Play Store**.
 
-First, run the development server:
+Built with **Next.js 16 (Turbopack, App Router)**, **TypeScript**, and **Tailwind CSS v4**, featuring an architecture with **zero backend dependencies** and modular, strongly typed data sources.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🚀 Key Highlights & Design System
+
+- **Brand Aesthetic**: Deep Obsidian canvas (`#05070c`), frosted glassmorphic cards (`backdrop-blur-xl`), luminous cyan & indigo ambient lighting, and typography powered by Geist.
+- **Interactive 3D Smartphone Frame**: Realistic titanium chassis featuring a functional Dynamic Island, status bar, and interactive app switcher allowing visitors to preview live app states.
+- **Data-Driven Architecture**: All apps, stats, reviews, and publishing steps are cleanly separated in `src/data/`. Add or update an app simply by editing `src/data/apps.ts`.
+- **Interactive App Modal**: Deep-dive product modal displaying interface flows, feature checklists, bare-metal tech stacks, and direct App Store / Google Play links.
+- **The Algoel Publishing Engine**: 4-stage interactive flywheel detailing market hypothesis, native engineering, algorithmic ASO, and monetization science.
+- **Wall of Love**: Filterable App Store & Google Play reviews from verified users across 175+ countries.
+- **Interactive Co-Publishing Portal**: Submission form for indie developers seeking publishing partnerships, studio careers, and media inquiries.
+
+---
+
+## 🛠️ Project Structure
+
+```text
+algoel/
+├── src/
+│   ├── app/
+│   │   ├── globals.css          # Design system variables, glow utilities & animations
+│   │   ├── layout.tsx           # SEO metadata, OpenGraph tags, viewport config
+│   │   └── page.tsx             # Main landing page composition
+│   ├── components/
+│   │   ├── Navbar.tsx           # Sticky glassmorphic navigation with mobile menu
+│   │   ├── HeroSection.tsx      # Hero headline, badges & interactive phone frame
+│   │   ├── PhoneMockup.tsx      # Interactive smartphone chassis with live UI switch
+│   │   ├── StatsBanner.tsx      # 52M+ downloads, 4.88★ rating, store credibility
+│   │   ├── AppShowcase.tsx      # Filterable portfolio grid by category
+│   │   ├── AppModal.tsx         # Detailed product specs & download modal
+│   │   ├── PublishingEngine.tsx # 4-step mobile publishing methodology
+│   │   ├── TechStackSection.tsx # Bare-metal native architecture (Swift, Kotlin, Metal)
+│   │   ├── ReviewsWall.tsx      # Verified store reviews with country flags
+│   │   ├── AboutSection.tsx     # Algoel ethos, principles & global studio hubs
+│   │   ├── FAQSection.tsx       # Interactive category-filtered accordion FAQ
+│   │   ├── ContactSection.tsx   # Interactive co-publishing and inquiry forms
+│   │   └── Footer.tsx           # Links, compliance, legal disclaimer & newsletter
+│   ├── data/
+│   │   ├── apps.ts              # Portfolio of published apps (add your apps here!)
+│   │   ├── company.ts           # Company metadata, contact emails, social links
+│   │   ├── publishing.ts        # Publishing pillars and studio capabilities
+│   │   ├── reviews.ts           # App Store & Play Store user reviews
+│   │   ├── techStack.ts         # Engineering stack items
+│   │   └── faqs.ts              # Frequently asked questions
+│   └── types/
+│       └── index.ts             # TypeScript definitions for apps, reviews, stats
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 How to Run Locally
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# 1. Install dependencies
+npm install
 
-## Learn More
+# 2. Run development server (Turbopack)
+npm run dev
 
-To learn more about Next.js, take a look at the following resources:
+# 3. Open in browser
+# http://localhost:3000
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# 4. Create production build
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📱 How to Add / Edit Apps
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To add a new app or update existing ones, open `src/data/apps.ts` and add an object matching the `AppItem` interface:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```typescript
+{
+  id: 'my-new-app',
+  name: 'My New App',
+  tagline: 'Tagline describing the app',
+  category: 'AI & Productivity', // or Creative, Health, etc.
+  downloads: '10M+',
+  rating: 4.9,
+  appStoreUrl: 'https://apps.apple.com/...',
+  playStoreUrl: 'https://play.google.com/...',
+  // ...
+}
+```
+All components, filter buttons, metrics, and modals will automatically update with no code changes needed.
