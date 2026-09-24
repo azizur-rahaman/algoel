@@ -7,7 +7,7 @@ import { Star, MessageSquareQuote, CheckCircle, Apple, Shield } from 'lucide-rea
 export const ReviewsWall: React.FC = () => {
   const [selectedAppFilter, setSelectedAppFilter] = useState<string>('All');
 
-  const appNames = ['All', 'OmniFlow AI', 'PrismLens Pro', 'AuraPulse', 'VaultKey Zero', 'SonicWave Studio', 'Chronos Flow'];
+  const appNames = ['All', 'Lenden', 'GhorLagbee', 'Classmates', 'FrameTastic'];
 
   const filteredReviews =
     selectedAppFilter === 'All'

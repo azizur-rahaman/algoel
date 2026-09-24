@@ -25,11 +25,11 @@ interface AppShowcaseProps {
 
 const CATEGORIES: AppCategory[] = [
   'All',
-  'AI & Productivity',
+  'Finance & Fintech',
+  'House & Home',
+  'Education & Campus',
   'Creative & Design',
-  'Utilities & Security',
-  'Health & Wellness',
-  'Spatial Audio',
+  'Utilities & Tools',
 ];
 
 export const AppShowcase: React.FC<AppShowcaseProps> = ({ apps }) => {
@@ -43,17 +43,15 @@ export const AppShowcase: React.FC<AppShowcaseProps> = ({ apps }) => {
 
   const renderIcon = (id: string, className = 'w-6 h-6') => {
     switch (id) {
-      case 'omniflow-ai':
-        return <Sparkles className={className} />;
-      case 'prismlens-pro':
-        return <Camera className={className} />;
-      case 'aurapulse':
-        return <Activity className={className} />;
-      case 'vaultkey-zero':
+      case 'lenden':
         return <ShieldCheck className={className} />;
-      case 'sonicwave-studio':
-        return <Headphones className={className} />;
-      case 'chronos-flow':
+      case 'ghorlagbee':
+        return <Layers className={className} />;
+      case 'classmates':
+        return <Sparkles className={className} />;
+      case 'frametastic':
+        return <Camera className={className} />;
+      case 'colorful-calculator':
         return <Clock className={className} />;
       default:
         return <Sparkles className={className} />;

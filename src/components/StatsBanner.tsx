@@ -48,27 +48,32 @@ export const StatsBanner: React.FC = () => {
         <div className="mt-10 pt-8 border-t border-white/5 flex flex-wrap items-center justify-center lg:justify-between gap-6 text-xs text-zinc-400">
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-emerald-400" />
-            <span className="text-zinc-300 font-medium">99.98% Crash-Free Rate</span>
-            <span className="text-zinc-500">across 50M+ active sessions</span>
+            <span className="text-zinc-300 font-medium">99.9% Crash-Free Rate</span>
+            <span className="text-zinc-500">tested across multiple Android releases</span>
           </div>
 
           <div className="flex items-center gap-2">
             <Shield className="w-3.5 h-3.5 text-cyan-400" />
-            <span className="text-zinc-300 font-medium">Zero Shady Telemetry</span>
-            <span className="text-zinc-500">Strict on-device processing</span>
+            <span className="text-zinc-300 font-medium">P2P Handshake & Bank-Grade PIN</span>
+            <span className="text-zinc-500">100% verified ledger accuracy</span>
           </div>
 
           <div className="flex items-center gap-2">
             <Zap className="w-3.5 h-3.5 text-amber-400" />
-            <span className="text-zinc-300 font-medium">Instant Cold Starts</span>
-            <span className="text-zinc-500">&lt;180ms startup latency</span>
+            <span className="text-zinc-300 font-medium">Gemini AI Integrated</span>
+            <span className="text-zinc-500">24/7 intelligent study assistance</span>
           </div>
 
-          <div className="flex items-center gap-2">
+          <a
+            href="https://play.google.com/store/apps/dev?id=5083898539193320748"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-2 text-zinc-300 hover:text-white transition-colors"
+          >
             <CheckCircle className="w-3.5 h-3.5 text-indigo-400" />
-            <span className="text-zinc-300 font-medium">Apple & Google Verified</span>
-            <span className="text-zinc-500">Tier 1 Studio Partner</span>
-          </div>
+            <span className="font-medium">Google Play Developer</span>
+            <span className="text-cyan-400 font-mono">View Store →</span>
+          </a>
         </div>
 
       </div>

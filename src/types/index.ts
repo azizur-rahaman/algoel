@@ -1,10 +1,10 @@
 export type AppCategory = 
   | 'All'
-  | 'AI & Productivity'
+  | 'Finance & Fintech'
+  | 'House & Home'
+  | 'Education & Campus'
   | 'Creative & Design'
-  | 'Utilities & Security'
-  | 'Health & Wellness'
-  | 'Spatial Audio';
+  | 'Utilities & Tools';
 
 export type Platform = 'iOS' | 'Android' | 'iPadOS' | 'watchOS' | 'macOS';
 

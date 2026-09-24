@@ -2,79 +2,79 @@ import { CompanyStat } from '@/types';
 
 export const COMPANY_INFO = {
   name: 'Algoel',
-  legalName: 'Algoel Technologies Inc.',
-  tagline: 'Algorithmic Precision. World-Class Mobile Apps.',
+  legalName: 'Algoel Technologies',
+  tagline: 'Engineering High-Utility Mobile Experiences.',
   description:
-    'Algoel is a premier mobile app studio and digital publisher. We architect, engineer, and publish category-defining iOS and Android applications enjoyed by over 50 million people worldwide.',
-  foundedYear: '2021',
-  headquarters: 'Global Studio — San Francisco • London • Tokyo',
-  totalDownloads: '52M+',
-  activeCountries: '175+',
-  averageRating: '4.88 ★',
-  storeFeatures: '38×',
-  email: 'press@algoel.com',
-  partnershipEmail: 'publish@algoel.com',
-  supportEmail: 'support@algoel.com',
+    'Algoel is a software development studio and digital publisher. We conceptualize, build, and publish high-performance mobile applications on the Google Play Store and iOS App Store spanning smart finance, home discovery, campus networks, and creative tools.',
+  foundedYear: '2023',
+  headquarters: 'Dhaka • Global Publishing',
+  totalDownloads: '100K+',
+  activeCountries: '85+',
+  averageRating: '4.64 ★',
+  storeFeatures: '12×',
+  email: 'frazizur.rahaman@gmail.com',
+  partnershipEmail: 'support@azizurrahaman.com',
+  supportEmail: 'support@ghorlagbee.com',
   socials: {
     twitter: 'https://twitter.com/algoelapps',
-    github: 'https://github.com/algoel',
+    github: 'https://github.com/azizur-rahaman/algoel',
     linkedin: 'https://linkedin.com/company/algoel',
     appStore: 'https://apps.apple.com/developer/algoel',
-    googlePlay: 'https://play.google.com/store/apps/dev?id=algoel',
+    googlePlay: 'https://play.google.com/store/apps/dev?id=5083898539193320748',
   },
 };
 
 export const COMPANY_STATS: CompanyStat[] = [
   {
-    value: '52M+',
-    label: 'Global Downloads',
-    subtext: 'Across App Store & Google Play',
-    icon: 'Download',
+    value: '5',
+    label: 'Published Apps',
+    subtext: 'Active on official Google Play Store',
+    icon: 'Smartphone',
   },
   {
-    value: '4.88',
-    label: 'Average Rating',
-    subtext: 'Across 340,000+ verified reviews',
+    value: '4.64',
+    label: 'Average Store Rating',
+    subtext: '5.0★ on Lenden, 4.6★ on GhorLagbee',
     suffix: '★',
     icon: 'Star',
   },
   {
-    value: '175+',
-    label: 'Countries Active',
-    subtext: 'Localized in 24 major languages',
-    icon: 'Globe',
+    value: '100%',
+    label: 'Verified & Secure',
+    subtext: 'P2P Handshake & Bank-Grade PIN Enclave',
+    icon: 'Shield',
   },
   {
-    value: '38×',
-    label: 'Store Honors',
-    subtext: "Apple App of the Day & Google Best of",
-    icon: 'Award',
+    value: '24/7',
+    label: 'Real-Time Sync',
+    subtext: 'Cloud Firestore & Gemini AI integrations',
+    icon: 'Zap',
   },
 ];
 
 export const CORE_VALUES = [
   {
-    title: 'Obsessive Craftsmanship',
+    title: 'High-Utility Engineering',
     description:
-      'We obsess over 120 FPS buttery interactions, sub-millisecond haptic responses, and human-centric interfaces that feel like natural extensions of the mind.',
-    badge: 'UX / UI Excellence',
+      'We identify real-world daily friction points—from debt tracking between friends to rental home hunting and campus coordination—and build razor-sharp, zero-bloat solutions.',
+    badge: 'Utility First',
   },
   {
-    title: 'Algorithmic Intelligence',
+    title: 'Peer-to-Peer Transparency',
     description:
-      'From on-device CoreML & PyTorch models to real-time predictive telemetry, our apps solve real human problems using bleeding-edge computational efficiency.',
-    badge: 'Deep Tech',
+      'Whether it is Lenden’s two-way verified transaction handshakes or GhorLagbee’s direct owner communication, we eliminate deceptive middlemen.',
+    badge: 'Zero Middlemen',
   },
   {
-    title: 'Global Organic Distribution',
+    title: 'Modern Declarative Architecture',
     description:
-      'Our proprietary App Store Optimization (ASO) algorithms and viral product loops turn high-utility mobile tools into global chart-toppers.',
-    badge: 'Growth Engine',
+      'Built with Flutter, Kotlin, Jetpack Compose, and Firebase, ensuring 60–120 FPS fluid navigation, offline persistence, and sub-100ms response times.',
+    badge: 'Native Speed',
   },
   {
-    title: 'Zero Compromise on Privacy',
+    title: 'Privacy & Data Ownership',
     description:
-      'Our apps process biometric and personal workflows directly on-device with zero-knowledge encryption, strictly adhering to Apple & Google highest standards.',
+      'Zero shady ad tracking. Users maintain 100% control of their personal ledgers and listings, with one-tap account deletion and end-to-end data encryption.',
     badge: 'Privacy By Design',
   },
 ];
