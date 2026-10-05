@@ -4,7 +4,8 @@ export type AppCategory =
   | 'House & Home'
   | 'Education & Campus'
   | 'Creative & Design'
-  | 'Utilities & Tools';
+  | 'Utilities & Tools'
+  | 'News & Magazines';
 
 export type Platform = 'iOS' | 'Android' | 'iPadOS' | 'watchOS' | 'macOS';
 

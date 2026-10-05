@@ -155,6 +155,11 @@ export const Footer: React.FC = () => {
             </div>
             <ul className="space-y-2 text-xs">
               <li>
+                <Link href="/privacy/news-app-flash" className="hover:text-cyan-400 transition-colors">
+                  News App Flash Privacy Policy
+                </Link>
+              </li>
+              <li>
                 <a href="#about" className="hover:text-cyan-400 transition-colors">
                   Privacy Manifest & Security
                 </a>

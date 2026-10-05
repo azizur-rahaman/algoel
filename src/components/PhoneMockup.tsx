@@ -22,6 +22,7 @@ import {
   Wallet,
   GraduationCap,
   Calculator,
+  Newspaper,
 } from 'lucide-react';
 
 interface PhoneMockupProps {
@@ -47,6 +48,8 @@ export const PhoneMockup: React.FC<PhoneMockupProps> = ({ apps, initialAppId = '
         return <Camera className="w-5 h-5 text-rose-400" />;
       case 'colorful-calculator':
         return <Calculator className="w-5 h-5 text-amber-400" />;
+      case 'news-app-flash':
+        return <Newspaper className="w-5 h-5 text-emerald-400" />;
       default:
         return <Sparkles className="w-5 h-5 text-cyan-400" />;
     }

@@ -26,7 +26,7 @@ export const COMPANY_INFO = {
 
 export const COMPANY_STATS: CompanyStat[] = [
   {
-    value: '5',
+    value: '6',
     label: 'Published Apps',
     subtext: 'Active on official Google Play Store',
     icon: 'Smartphone',

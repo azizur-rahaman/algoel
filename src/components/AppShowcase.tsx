@@ -17,6 +17,7 @@ import {
   ExternalLink,
   Layers,
   ChevronRight,
+  Newspaper,
 } from 'lucide-react';
 
 interface AppShowcaseProps {
@@ -30,6 +31,7 @@ const CATEGORIES: AppCategory[] = [
   'Education & Campus',
   'Creative & Design',
   'Utilities & Tools',
+  'News & Magazines',
 ];
 
 export const AppShowcase: React.FC<AppShowcaseProps> = ({ apps }) => {
@@ -53,6 +55,8 @@ export const AppShowcase: React.FC<AppShowcaseProps> = ({ apps }) => {
         return <Camera className={className} />;
       case 'colorful-calculator':
         return <Clock className={className} />;
+      case 'news-app-flash':
+        return <Newspaper className={className} />;
       default:
         return <Sparkles className={className} />;
     }
