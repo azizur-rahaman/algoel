@@ -427,12 +427,12 @@ export default function NewsAppFlashPrivacyPage() {
               <div>
                 <span className="text-zinc-500 block">Official Website:</span>
                 <a
-                  href="https://algoel.com"
+                  href="https://algoel.vercel.app"
                   target="_blank"
                   rel="noreferrer"
                   className="text-emerald-400 hover:text-emerald-300 font-medium text-sm inline-flex items-center gap-1 transition-colors"
                 >
-                  <span>https://algoel.com</span>
+                  <span>https://algoel.vercel.app</span>
                   <ExternalLink className="w-3.5 h-3.5" />
                 </a>
               </div>

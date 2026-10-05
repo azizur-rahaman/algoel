@@ -10,7 +10,7 @@ export const COMPANY_INFO = {
   foundedYear: '2023',
   headquarters: 'Dhaka, Bangladesh • Global Publishing',
   address: 'Dhaka, Bangladesh',
-  phone: '+880 1789-221199',
+  website: 'https://algoel.vercel.app',
   totalDownloads: '100K+',
   activeCountries: '85+',
   averageRating: '4.64 ★',

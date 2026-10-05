@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://algoel.com',
+    url: 'https://algoel.vercel.app',
     title: 'Algoel — Mobile App Studio & Digital Publisher',
     description:
       'We craft, engineer, and publish category-defining mobile applications for the App Store & Google Play. Over 52 million downloads worldwide.',

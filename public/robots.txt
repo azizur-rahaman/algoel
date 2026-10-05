@@ -9,4 +9,4 @@ Disallow:
 User-agent: *
 Allow: /
 
-Sitemap: https://algoel.com/sitemap.xml
+Sitemap: https://algoel.vercel.app/sitemap.xml

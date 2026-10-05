@@ -229,13 +229,6 @@ export const ContactSection: React.FC = () => {
                       className="text-cyan-400 font-mono hover:underline"
                     >
                       {COMPANY_INFO.email}
-                    </a>{' '}
-                    •{' '}
-                    <a
-                      href={`tel:${COMPANY_INFO.phone}`}
-                      className="text-emerald-400 font-mono hover:underline"
-                    >
-                      {COMPANY_INFO.phone}
                     </a>
                   </div>
                   <div className="text-[11px] text-zinc-500">

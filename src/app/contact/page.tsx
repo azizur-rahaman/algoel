@@ -4,7 +4,6 @@ import type { Metadata } from 'next';
 import { COMPANY_INFO } from '@/data/company';
 import {
   Mail,
-  Phone,
   MapPin,
   Building2,
   ExternalLink,
@@ -20,7 +19,7 @@ import { ContactForm } from './ContactForm';
 export const metadata: Metadata = {
   title: 'Contact Information & Entity Details | Algoel Technologies',
   description:
-    'Official contact information, developer entity details, and support channels for Algoel Technologies (algoel). Direct email, telephone, and address for Google Play and publisher inquiries.',
+    'Official contact information, developer entity details, and support channels for Algoel Technologies (algoel). Direct email and address for Google Play and publisher inquiries.',
 };
 
 export default function ContactPage() {
@@ -170,37 +169,32 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* Telephone Channel */}
+          {/* Support & Response Desk */}
           <div className="p-6 sm:p-7 rounded-3xl bg-zinc-900/50 border border-white/10 hover:border-cyan-500/30 transition-all flex flex-col justify-between space-y-4">
             <div className="space-y-3">
               <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
-                <Phone className="w-6 h-6" />
+                <Clock className="w-6 h-6" />
               </div>
               <div>
-                <h3 className="text-lg font-bold text-white">Telephone &amp; Direct Line</h3>
+                <h3 className="text-lg font-bold text-white">Publisher &amp; Editorial Desk</h3>
                 <p className="text-xs text-zinc-400 mt-1">
-                  Accessible developer telephone number for entity verification and voice inquiries.
+                  Dedicated desk for content feedback, press verification, and editorial grievance redressal.
                 </p>
               </div>
             </div>
 
             <div className="space-y-2 pt-3 border-t border-white/5">
-              <div className="p-3 rounded-xl bg-zinc-950/70 border border-white/5">
-                <div className="text-[11px] font-mono text-zinc-500 uppercase">Developer Direct Line</div>
-                <a
-                  href={`tel:${COMPANY_INFO.phone}`}
-                  className="text-base font-bold text-emerald-400 hover:text-emerald-300 font-mono transition-colors block mt-0.5"
-                >
-                  {COMPANY_INFO.phone}
-                </a>
+              <div className="p-3 rounded-xl bg-zinc-950/70 border border-white/5 flex items-center justify-between text-xs text-zinc-400">
+                <span className="flex items-center gap-1.5 font-medium text-white">
+                  Email Response SLA
+                </span>
+                <span className="font-mono text-emerald-400 font-semibold">24–48 Hours</span>
               </div>
 
-              <div className="p-3 rounded-xl bg-zinc-950/70 border border-white/5 flex items-center justify-between text-xs text-zinc-400">
-                <span className="flex items-center gap-1.5">
-                  <Clock className="w-3.5 h-3.5 text-zinc-500" />
-                  Response Window
-                </span>
-                <span className="font-mono text-zinc-200">24–48 Hours</span>
+              <div className="p-3 rounded-xl bg-zinc-950/70 border border-white/5 text-xs text-zinc-400">
+                <span>Verified Entity: </span>
+                <span className="text-white font-medium">Algoel Technologies</span>
+                <span className="text-zinc-500 block text-[11px] mt-0.5">Compliant with Google Play News App guidelines</span>
               </div>
             </div>
           </div>
@@ -252,10 +246,10 @@ export default function ContactPage() {
               <div className="p-3 rounded-xl bg-zinc-950/70 border border-white/5 flex items-center justify-between">
                 <div>
                   <div className="text-[11px] font-mono text-zinc-500 uppercase">Website</div>
-                  <div className="text-sm font-semibold text-cyan-400 font-mono mt-0.5">https://algoel.com</div>
+                  <div className="text-sm font-semibold text-cyan-400 font-mono mt-0.5">https://algoel.vercel.app</div>
                 </div>
                 <a
-                  href="https://algoel.com"
+                  href="https://algoel.vercel.app"
                   target="_blank"
                   rel="noreferrer"
                   className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-zinc-300"

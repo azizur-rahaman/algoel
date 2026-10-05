@@ -92,10 +92,6 @@ export const Footer: React.FC = () => {
                 Contact:{' '}
                 <a href={`mailto:${COMPANY_INFO.email}`} className="text-zinc-400 hover:text-cyan-400 transition-colors">
                   {COMPANY_INFO.email}
-                </a>{' '}
-                •{' '}
-                <a href={`tel:${COMPANY_INFO.phone}`} className="text-zinc-400 hover:text-cyan-400 transition-colors">
-                  {COMPANY_INFO.phone}
                 </a>
               </div>
             </div>
