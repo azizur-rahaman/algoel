@@ -1,55 +1,37 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
-
 export const metadata: Metadata = {
-  title: 'Algoel — Mobile App Studio & Digital Publisher | iOS & Android',
+  title: 'Algoel | Impossible. Maybe.',
   description:
-    'Algoel is a premier software company and mobile publisher. We design, engineer, and publish category-defining iOS and Android applications with over 52M+ downloads worldwide.',
+    'We acquire and improve iconic products. Supported by proprietary technologies and an elite team of engineers, scientists, and designers.',
   keywords: [
     'Algoel',
-    'Mobile App Publisher',
-    'iOS App Studio',
-    'Android App Publisher',
-    'App Store',
-    'Google Play',
+    'Bending Spoons',
     'Mobile Apps',
-    'SwiftUI',
-    'Jetpack Compose',
-    'Product Studio',
+    'Iconic Products',
+    'Tech Studio',
+    'Digital Products',
   ],
-  authors: [{ name: 'Algoel Technologies Inc.' }],
+  authors: [{ name: 'Algoel Technologies' }],
   creator: 'Algoel',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://algoel.vercel.app',
-    title: 'Algoel — Mobile App Studio & Digital Publisher',
-    description:
-      'We craft, engineer, and publish category-defining mobile applications for the App Store & Google Play. Over 52 million downloads worldwide.',
+    title: 'Algoel | Impossible. Maybe.',
+    description: 'We acquire and improve iconic products.',
     siteName: 'Algoel',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Algoel — Mobile App Studio & Digital Publisher',
-    description:
-      'We craft, engineer, and publish category-defining mobile applications for the App Store & Google Play.',
-    creator: '@algoelapps',
+    title: 'Algoel | Impossible. Maybe.',
+    description: 'We acquire and improve iconic products.',
   },
 };
 
 export const viewport = {
-  themeColor: '#05070c',
+  themeColor: '#000000',
 };
 
 export default function RootLayout({
@@ -58,11 +40,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased dark`}
-    >
-      <body className="min-h-full flex flex-col bg-[#05070c] text-zinc-100 selection:bg-cyan-500 selection:text-white">
+    <html lang="en" className="h-full antialiased" suppressHydrationWarning>
+      <body
+        className="min-h-full flex flex-col bg-black text-white selection:bg-[#72E5FF] selection:text-black"
+        suppressHydrationWarning
+      >
         {children}
       </body>
     </html>

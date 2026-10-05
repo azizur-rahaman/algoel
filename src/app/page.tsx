@@ -1,53 +1,43 @@
 import React from 'react';
-import { APPS_DATA } from '@/data/apps';
 import { Navbar } from '@/components/Navbar';
 import { HeroSection } from '@/components/HeroSection';
-import { StatsBanner } from '@/components/StatsBanner';
-import { AppShowcase } from '@/components/AppShowcase';
-import { PublishingEngine } from '@/components/PublishingEngine';
-import { TechStackSection } from '@/components/TechStackSection';
-import { ReviewsWall } from '@/components/ReviewsWall';
-import { AboutSection } from '@/components/AboutSection';
-import { FAQSection } from '@/components/FAQSection';
-import { ContactSection } from '@/components/ContactSection';
+import { ManifestoSection } from '@/components/ManifestoSection';
+import { ProductsSection } from '@/components/ProductsSection';
+import { TechnologiesSection } from '@/components/TechnologiesSection';
+import { InterviewsSection } from '@/components/InterviewsSection';
+import { AccoladesSection } from '@/components/AccoladesSection';
 import { Footer } from '@/components/Footer';
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen bg-[#05070c] text-white selection:bg-cyan-500 selection:text-white">
-      {/* Top Sticky Navigation */}
-      <Navbar />
+    <div
+      className="relative min-h-screen bg-black text-white selection:bg-[#72E5FF] selection:text-black"
+      suppressHydrationWarning
+    >
+      {/* Dynamic Header with scroll theme observer */}
+      <Navbar ctaText="Get in touch" ctaLink="/contact" />
 
-      <main>
-        {/* Hero Section with Interactive Smartphone Mockup */}
-        <HeroSection apps={APPS_DATA} />
+      <main className="relative">
+        {/* 1. Hero: Display Headline & 3D Rotating Card Cylinder Carousel */}
+        <HeroSection />
 
-        {/* Global KPIs & Trust Badges */}
-        <StatsBanner />
+        {/* 2. Manifesto: Large Typography Statements */}
+        <ManifestoSection />
 
-        {/* Mobile App Portfolio Showcase */}
-        <AppShowcase apps={APPS_DATA} />
+        {/* 3. Products: Exact Bending Spoons Card System with Pastel Palettes */}
+        <ProductsSection />
 
-        {/* The Scientific 4-Stage Publishing Engine */}
-        <PublishingEngine />
+        {/* 4. Proprietary Technologies: Handshake Enclave, Professor AI, MapRadar, etc. */}
+        <TechnologiesSection />
 
-        {/* Bare-Metal Native Architecture & Tech Stack */}
-        <TechStackSection />
+        {/* 5. Spotlights: Verified User Reviews & Case Studies */}
+        <InterviewsSection />
 
-        {/* App Store & Google Play Wall of Love */}
-        <ReviewsWall />
-
-        {/* Studio Ethos & Foundation */}
-        <AboutSection />
-
-        {/* Frequently Asked Questions */}
-        <FAQSection />
-
-        {/* Interactive Co-Publishing & Inquiries Form */}
-        <ContactSection />
+        {/* 6. Accolades: Electric Mint Accent Pre-Footer & Verified Ratings */}
+        <AccoladesSection />
       </main>
 
-      {/* Studio Footer */}
+      {/* 7. Footer: 4-Column Directory, Massive Logotype & Signature Closing */}
       <Footer />
     </div>
   );
