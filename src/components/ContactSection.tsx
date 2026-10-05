@@ -221,14 +221,29 @@ export const ContactSection: React.FC = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
-                <div className="text-xs text-zinc-400 text-center sm:text-left">
-                  Direct contact:{' '}
-                  <a
-                    href={`mailto:${COMPANY_INFO.partnershipEmail}`}
-                    className="text-cyan-400 font-mono hover:underline"
-                  >
-                    {COMPANY_INFO.partnershipEmail}
-                  </a>
+                <div className="text-xs text-zinc-400 text-center sm:text-left space-y-0.5">
+                  <div>
+                    Direct contact:{' '}
+                    <a
+                      href={`mailto:${COMPANY_INFO.email}`}
+                      className="text-cyan-400 font-mono hover:underline"
+                    >
+                      {COMPANY_INFO.email}
+                    </a>{' '}
+                    •{' '}
+                    <a
+                      href={`tel:${COMPANY_INFO.phone}`}
+                      className="text-emerald-400 font-mono hover:underline"
+                    >
+                      {COMPANY_INFO.phone}
+                    </a>
+                  </div>
+                  <div className="text-[11px] text-zinc-500">
+                    Official entity details:{' '}
+                    <a href="/contact" className="text-cyan-400 hover:underline">
+                      View Contact Page &rarr;
+                    </a>
+                  </div>
                 </div>
 
                 <button

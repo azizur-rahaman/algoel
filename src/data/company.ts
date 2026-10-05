@@ -3,11 +3,14 @@ import { CompanyStat } from '@/types';
 export const COMPANY_INFO = {
   name: 'Algoel',
   legalName: 'Algoel Technologies',
+  developerName: 'Azizur Rahaman',
   tagline: 'Engineering High-Utility Mobile Experiences.',
   description:
     'Algoel is a software development studio and digital publisher. We conceptualize, build, and publish high-performance mobile applications on the Google Play Store and iOS App Store spanning smart finance, home discovery, campus networks, and creative tools.',
   foundedYear: '2023',
-  headquarters: 'Dhaka • Global Publishing',
+  headquarters: 'Dhaka, Bangladesh • Global Publishing',
+  address: 'Dhaka, Bangladesh',
+  phone: '+880 1789-221199',
   totalDownloads: '100K+',
   activeCountries: '85+',
   averageRating: '4.64 ★',

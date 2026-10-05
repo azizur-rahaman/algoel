@@ -87,8 +87,17 @@ export const Footer: React.FC = () => {
             </p>
 
             <div className="text-[11px] font-mono text-zinc-500 space-y-1">
-              <div>Global Headquarters: San Francisco • London • Tokyo</div>
-              <div>Entity: {COMPANY_INFO.legalName}</div>
+              <div>Entity: {COMPANY_INFO.legalName} ({COMPANY_INFO.headquarters})</div>
+              <div>
+                Contact:{' '}
+                <a href={`mailto:${COMPANY_INFO.email}`} className="text-zinc-400 hover:text-cyan-400 transition-colors">
+                  {COMPANY_INFO.email}
+                </a>{' '}
+                •{' '}
+                <a href={`tel:${COMPANY_INFO.phone}`} className="text-zinc-400 hover:text-cyan-400 transition-colors">
+                  {COMPANY_INFO.phone}
+                </a>
+              </div>
             </div>
           </div>
 
@@ -120,6 +129,11 @@ export const Footer: React.FC = () => {
               Studio & Engine
             </div>
             <ul className="space-y-2 text-xs">
+              <li>
+                <Link href="/contact" className="hover:text-cyan-400 transition-colors text-white font-medium">
+                  Contact & Entity Info
+                </Link>
+              </li>
               <li>
                 <a href="#publishing" className="hover:text-cyan-400 transition-colors">
                   Publishing Engine
@@ -154,6 +168,11 @@ export const Footer: React.FC = () => {
               Legal & Privacy
             </div>
             <ul className="space-y-2 text-xs">
+              <li>
+                <Link href="/contact" className="hover:text-cyan-400 transition-colors">
+                  Google Play Entity Declaration
+                </Link>
+              </li>
               <li>
                 <Link href="/privacy/news-app-flash" className="hover:text-cyan-400 transition-colors">
                   News App Flash Privacy Policy

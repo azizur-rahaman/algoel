@@ -22,12 +22,13 @@ export const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { label: 'Apps', href: '#apps' },
-    { label: 'Publishing Engine', href: '#publishing' },
-    { label: 'Architecture', href: '#stack' },
-    { label: 'Reviews', href: '#reviews' },
-    { label: 'About', href: '#about' },
-    { label: 'FAQ', href: '#faqs' },
+    { label: 'Apps', href: '/#apps' },
+    { label: 'Publishing Engine', href: '/#publishing' },
+    { label: 'Architecture', href: '/#stack' },
+    { label: 'Reviews', href: '/#reviews' },
+    { label: 'About', href: '/#about' },
+    { label: 'FAQ', href: '/#faqs' },
+    { label: 'Contact', href: '/contact' },
   ];
 
   return (
