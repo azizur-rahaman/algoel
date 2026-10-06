@@ -23,6 +23,7 @@ import {
   GraduationCap,
   Calculator,
   Newspaper,
+  QrCode,
 } from 'lucide-react';
 
 interface PhoneMockupProps {
@@ -40,6 +41,8 @@ export const PhoneMockup: React.FC<PhoneMockupProps> = ({ apps, initialAppId = '
     switch (id) {
       case 'lenden':
         return <Wallet className="w-5 h-5 text-emerald-400" />;
+      case 'safeqr':
+        return <QrCode className="w-5 h-5 text-cyan-400" />;
       case 'ghorlagbee':
         return <MapPin className="w-5 h-5 text-blue-400" />;
       case 'classmates':
@@ -67,23 +70,25 @@ export const PhoneMockup: React.FC<PhoneMockupProps> = ({ apps, initialAppId = '
 
       {/* App Switcher Pills (Top of phone) */}
       <div className="mb-4 flex flex-wrap justify-center items-center gap-1.5 p-1.5 rounded-full bg-zinc-900/80 border border-white/10 backdrop-blur-md z-10 shadow-lg max-w-sm">
-        {apps.slice(0, 3).map((app) => (
-          <button
-            key={app.id}
-            onClick={() => {
-              setSelectedAppId(app.id);
-              setInteractiveState(0);
-            }}
-            className={`px-3 py-1 text-xs font-medium rounded-full transition-all duration-200 flex items-center gap-1.5 ${
-              selectedAppId === app.id
-                ? 'bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-sm'
-                : 'text-zinc-400 hover:text-white hover:bg-white/5'
-            }`}
-          >
-            <span className="w-1.5 h-1.5 rounded-full bg-current" />
-            {app.name}
-          </button>
-        ))}
+        {apps
+          .filter((a) => ['lenden', 'safeqr', 'ghorlagbee', 'news-app-flash'].includes(a.id))
+          .map((app) => (
+            <button
+              key={app.id}
+              onClick={() => {
+                setSelectedAppId(app.id);
+                setInteractiveState(0);
+              }}
+              className={`px-3 py-1 text-xs font-medium rounded-full transition-all duration-200 flex items-center gap-1.5 ${
+                selectedAppId === app.id
+                  ? 'bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-sm'
+                  : 'text-zinc-400 hover:text-white hover:bg-white/5'
+              }`}
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-current" />
+              {app.name}
+            </button>
+          ))}
       </div>
 
       {/* Titanium Smartphone Chassis */}
@@ -262,6 +267,56 @@ export const PhoneMockup: React.FC<PhoneMockupProps> = ({ apps, initialAppId = '
                   >
                     {interactiveState === 0 ? 'Ask Professor AI →' : 'Reset AI Prompt'}
                   </button>
+                </div>
+              </div>
+            )}
+
+            {activeApp.id === 'safeqr' && (
+              <div className="space-y-3">
+                <div className="p-3.5 rounded-2xl bg-gradient-to-br from-blue-950/50 via-cyan-950/40 to-slate-900 border border-cyan-500/20">
+                  <div className="flex items-center justify-between text-[10px] text-cyan-400 font-medium mb-1">
+                    <span className="flex items-center gap-1">
+                      <QrCode className="w-3 h-3" /> Scanner Lens Active
+                    </span>
+                    <span className="text-cyan-300 font-mono font-bold">100% Offline</span>
+                  </div>
+                  <div className="text-sm font-bold text-white mt-1 flex items-center justify-between">
+                    <span>{interactiveState === 0 ? 'Wi-Fi Network Decoded' : 'Custom QR Generated'}</span>
+                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 font-mono">0.05s</span>
+                  </div>
+                  <div className="text-[11px] text-zinc-300 font-mono my-1.5 p-2 rounded-lg bg-black/40 border border-white/5 space-y-0.5">
+                    {interactiveState === 0 ? (
+                      <>
+                        <div className="text-white font-semibold">SSID: Algoel-HQ-5G</div>
+                        <div className="text-zinc-400 text-[10px]">Security: WPA2 • Pass: ••••••••••</div>
+                      </>
+                    ) : (
+                      <>
+                        <div className="text-white font-semibold">https://algoel.vercel.app</div>
+                        <div className="text-zinc-400 text-[10px]">High-Res Vector Ready to Export</div>
+                      </>
+                    )}
+                  </div>
+                  <div className="space-y-1.5 text-[11px] text-zinc-300">
+                    <div className="p-2 rounded-lg bg-black/40 border border-white/5 flex items-center justify-between">
+                      <span className="line-clamp-1">Haptic Confirmation: Active ✓</span>
+                      <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+                    </div>
+                    <div className="p-2 rounded-lg bg-black/40 border border-white/5 flex items-center justify-between">
+                      <span className="line-clamp-1">Private Ledger: 48 Scans Logged</span>
+                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                    </div>
+                  </div>
+                  <button
+                    onClick={() => setInteractiveState((prev) => (prev + 1) % 2)}
+                    className="mt-2.5 w-full py-1.5 text-[10px] font-semibold text-cyan-300 bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-500/30 rounded-lg transition-all text-center"
+                  >
+                    {interactiveState === 0 ? 'Switch to QR Studio Preview →' : 'Switch to Scanner Lens →'}
+                  </button>
+                </div>
+                <div className="p-2 rounded-xl bg-zinc-900/60 border border-white/5 text-[10px] text-zinc-400 flex items-center justify-between">
+                  <span>Privacy Mode:</span>
+                  <span className="text-emerald-400 font-semibold">Zero Cloud Logs • Local Only</span>
                 </div>
               </div>
             )}

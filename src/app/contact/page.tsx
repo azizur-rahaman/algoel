@@ -301,7 +301,20 @@ export default function ContactPage() {
           <h3 className="text-sm font-mono uppercase tracking-wider text-zinc-400 font-semibold">
             Dedicated App Support Directory
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 text-xs">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 text-xs">
+            <div className="p-3.5 rounded-xl bg-zinc-950/60 border border-white/5 space-y-1">
+              <div className="font-semibold text-white">SafeQR</div>
+              <div className="text-[11px] font-mono text-zinc-500">com.algoel.safeqr_qr_and_barcode_scanner</div>
+              <div className="pt-1">
+                <Link
+                  href="/privacy/safeqr"
+                  className="text-cyan-400 hover:underline text-[11px]"
+                >
+                  Privacy Policy &rarr;
+                </Link>
+              </div>
+            </div>
+
             <div className="p-3.5 rounded-xl bg-zinc-950/60 border border-white/5 space-y-1">
               <div className="font-semibold text-white">News App Flash</div>
               <div className="text-[11px] font-mono text-zinc-500">com.algoel.news_app_flash</div>
@@ -338,8 +351,11 @@ export default function ContactPage() {
             <Link href="/" className="hover:text-cyan-400 transition-colors">
               Home
             </Link>
+            <Link href="/privacy/safeqr" className="hover:text-cyan-400 transition-colors">
+              SafeQR Privacy
+            </Link>
             <Link href="/privacy/news-app-flash" className="hover:text-cyan-400 transition-colors">
-              Privacy Policy
+              News Privacy
             </Link>
             <a
               href={`mailto:${COMPANY_INFO.email}`}

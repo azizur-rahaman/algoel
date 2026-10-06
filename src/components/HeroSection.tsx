@@ -123,7 +123,7 @@ export const HeroSection: React.FC = () => {
                   {/* Bottom Bar */}
                   <div className="flex items-center justify-between text-[10px] sm:text-xs font-medium text-black/80 z-10 border-t border-black/10 pt-2">
                     <span className="truncate">{app.category}</span>
-                    <span className="font-bold">★ {app.id === 'lenden' ? '5.0' : app.id === 'ghorlagbee' ? '4.6' : '4.2'}</span>
+                    <span className="font-bold">★ {app.id === 'lenden' || app.id === 'safeqr' || app.id === 'news-app-flash' ? '5.0' : app.id === 'ghorlagbee' ? '4.6' : '4.2'}</span>
                   </div>
                 </div>
               </div>
@@ -137,7 +137,7 @@ export const HeroSection: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-4 border-t border-white/10 pt-8 text-center sm:text-left">
           <div className="flex flex-col sm:items-start items-center">
             <span className="text-3xl sm:text-4xl md:text-5xl font-light tracking-tight text-white">
-              6 <span className="font-normal">published apps</span>
+              {ALGOEL_PRODUCTS.length} <span className="font-normal">published apps</span>
             </span>
             <span className="text-sm font-light text-zinc-400 mt-1">
               active releases on Google Play Store

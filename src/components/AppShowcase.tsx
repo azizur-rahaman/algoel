@@ -18,6 +18,7 @@ import {
   Layers,
   ChevronRight,
   Newspaper,
+  QrCode,
 } from 'lucide-react';
 
 interface AppShowcaseProps {
@@ -47,6 +48,8 @@ export const AppShowcase: React.FC<AppShowcaseProps> = ({ apps }) => {
     switch (id) {
       case 'lenden':
         return <ShieldCheck className={className} />;
+      case 'safeqr':
+        return <QrCode className={className} />;
       case 'ghorlagbee':
         return <Layers className={className} />;
       case 'classmates':

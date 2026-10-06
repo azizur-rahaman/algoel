@@ -124,9 +124,12 @@ export const Footer: React.FC = () => {
               © {new Date().getFullYear()} {COMPANY_INFO.legalName}. All rights reserved. Zero shady ad tracking. 100% user data ownership.
             </p>
 
-            <div className="mt-3 flex flex-wrap gap-4 text-xs text-zinc-400">
+            <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1.5 text-xs text-zinc-400">
+              <Link href="/privacy/safeqr" className="hover:underline hover:text-white text-cyan-400">
+                SafeQR Privacy
+              </Link>
               <Link href="/privacy/news-app-flash" className="hover:underline hover:text-white">
-                Privacy & Data Policy
+                News App Flash Privacy
               </Link>
               <Link href="/contact" className="hover:underline hover:text-white">
                 Support Desk

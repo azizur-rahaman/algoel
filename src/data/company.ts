@@ -12,8 +12,8 @@ export const COMPANY_INFO = {
   address: 'Dhaka, Bangladesh',
   website: 'https://algoel.vercel.app',
   totalDownloads: '1,000+',
-  publishedAppsCount: '6',
-  averageRating: '4.64 ★',
+  publishedAppsCount: '7',
+  averageRating: '4.70 ★',
   email: 'frazizur.rahaman@gmail.com',
   partnershipEmail: 'support@azizurrahaman.com',
   supportEmail: 'support@ghorlagbee.com',
@@ -28,7 +28,7 @@ export const COMPANY_INFO = {
 
 export const COMPANY_STATS: CompanyStat[] = [
   {
-    value: '6',
+    value: '7',
     label: 'Published Apps',
     subtext: 'Active on official Google Play Store',
     icon: 'Smartphone',
