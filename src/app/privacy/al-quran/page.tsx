@@ -458,19 +458,11 @@ export default function AlQuranPrivacyPage() {
               <p className="text-zinc-400">Dhaka, Bangladesh</p>
               <div className="flex flex-col sm:flex-row gap-2 pt-2 border-t border-white/5">
                 <a
-                  href="mailto:frazizur.rahaman@gmail.com"
+                  href="mailto:algoelofficial@gmail.com"
                   className="inline-flex items-center gap-1.5 text-amber-400 hover:text-amber-300 font-mono"
                 >
                   <Mail className="w-3.5 h-3.5" />
-                  <span>frazizur.rahaman@gmail.com</span>
-                </a>
-                <span className="hidden sm:inline text-zinc-600">•</span>
-                <a
-                  href="mailto:support@azizurrahaman.com"
-                  className="inline-flex items-center gap-1.5 text-amber-400 hover:text-amber-300 font-mono"
-                >
-                  <Mail className="w-3.5 h-3.5" />
-                  <span>support@azizurrahaman.com</span>
+                  <span>algoelofficial@gmail.com</span>
                 </a>
               </div>
             </div>

@@ -132,7 +132,7 @@ export default function SafeQRPrivacyPage() {
                   <span>Contact</span>
                 </div>
                 <div className="text-cyan-400 font-medium truncate">
-                  frazizur.rahaman@gmail.com
+                  algoelofficial@gmail.com
                 </div>
               </div>
             </div>
@@ -461,14 +461,11 @@ export default function SafeQRPrivacyPage() {
               <div>
                 <span className="text-zinc-500 block">Official Support Email:</span>
                 <a
-                  href="mailto:frazizur.rahaman@gmail.com"
+                  href="mailto:algoelofficial@gmail.com"
                   className="text-cyan-400 hover:text-cyan-300 font-medium text-sm transition-colors"
                 >
-                  frazizur.rahaman@gmail.com
+                  algoelofficial@gmail.com
                 </a>
-                <span className="text-zinc-500 text-[11px] block mt-0.5">
-                  Alternate: support@azizurrahaman.com
-                </span>
               </div>
               <div>
                 <span className="text-zinc-500 block">Official Website:</span>

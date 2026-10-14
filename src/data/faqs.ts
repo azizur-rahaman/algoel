@@ -35,7 +35,7 @@ export const FAQS_DATA: FAQItem[] = [
     category: 'Apps & Support',
     question: 'How do I request support or report a bug for an Algoel app?',
     answer:
-      'You can reach our dedicated technical support team at support@algoel.com or submit a request directly inside any of our apps under Settings > Contact Support. We typically respond within 24 hours.',
+      'You can reach our dedicated technical support team at algoelofficial@gmail.com or submit a request directly inside any of our apps under Settings > Contact Support. We typically respond within 24 hours.',
   },
   {
     category: 'Careers',

@@ -14,9 +14,9 @@ export const COMPANY_INFO = {
   totalDownloads: '1,000+',
   publishedAppsCount: '8',
   averageRating: '4.75 ★',
-  email: 'frazizur.rahaman@gmail.com',
+  email: 'algoelofficial@gmail.com',
   partnershipEmail: 'support@azizurrahaman.com',
-  supportEmail: 'support@ghorlagbee.com',
+  supportEmail: 'algoelofficial@gmail.com',
   socials: {
     twitter: 'https://twitter.com/algoelapps',
     github: 'https://github.com/azizur-rahaman/algoel',
