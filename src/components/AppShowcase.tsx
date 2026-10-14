@@ -19,6 +19,7 @@ import {
   ChevronRight,
   Newspaper,
   QrCode,
+  BookOpen,
 } from 'lucide-react';
 
 interface AppShowcaseProps {
@@ -33,6 +34,7 @@ const CATEGORIES: AppCategory[] = [
   'Creative & Design',
   'Utilities & Tools',
   'News & Magazines',
+  'Books & Reference',
 ];
 
 export const AppShowcase: React.FC<AppShowcaseProps> = ({ apps }) => {

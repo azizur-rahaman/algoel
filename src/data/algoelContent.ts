@@ -43,6 +43,37 @@ export interface AlgoelSpotlight {
 
 export const ALGOEL_PRODUCTS: AlgoelProduct[] = [
   {
+    id: 'al-quran',
+    name: "Al-Qur'an Bangla",
+    tagline: 'Authentic Quran with Bengali Translation, Audio Recitation & Word Meanings',
+    category: 'Books & Reference',
+    released: '2026',
+    bgColor: '#D1FAE5',
+    invertColor: false,
+    rating: '5.0★ Perfect Store Rating',
+    downloads: 'New Release',
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.algoel.alquran',
+    iconSymbol: 'BookOpen',
+    bulletPoints: [
+      'Released 2026 • Built with Flutter & BLoC',
+      'Complete 114 Surahs with crystal-clear Indo-Pak script & Bengali translation',
+      'Multi-Qari audio recitation with background playback & floating mini-player',
+      'Word-by-word Bengali meanings, root breakdown, and advanced Bengali search',
+      '100% Free, Ad-Free & Privacy-First with offline reading & bookmarks vault',
+    ],
+    mockupData: {
+      badge: '114 Surahs • Multi-Qari',
+      headline: 'আল-কোরআন বাংলা অডিও',
+      stat: '১১৪টি পূর্ণাঙ্গ সূরা',
+      statLabel: 'মিশারি আলাফাসি ও আব্দুল বাসিত তেলাওয়াত',
+      details: [
+        'সূরা আল-ফাতিহা: শব্দার্থ, উচ্চারণ ও বাংলা অনুবাদ',
+        'ফ্লোটিং মিনি প্লেয়ার ও ব্যাকগ্রাউন্ড অডিও স্ট্রিমিং',
+        '১০০% বিজ্ঞাপনমুক্ত, অফলাইন বুকমার্ক ও নাইট মোড',
+      ],
+    },
+  },
+  {
     id: 'lenden',
     name: 'Lenden',
     tagline: 'Secure Personal Financial Ledger & Credit Tracker',

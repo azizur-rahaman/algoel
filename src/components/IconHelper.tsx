@@ -32,6 +32,9 @@ import {
   Sliders,
   QrCode,
   Share2,
+  BookOpen,
+  Book,
+  Newspaper,
 } from 'lucide-react';
 
 interface IconHelperProps {
@@ -94,6 +97,12 @@ export const IconHelper: React.FC<IconHelperProps> = ({ name, className = 'w-5 h
       return <QrCode {...props} />;
     case 'share2':
       return <Share2 {...props} />;
+    case 'bookopen':
+    case 'book-open':
+    case 'book':
+      return <BookOpen {...props} />;
+    case 'newspaper':
+      return <Newspaper {...props} />;
     default:
       return <Sparkles {...props} />;
   }

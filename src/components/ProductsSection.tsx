@@ -10,7 +10,7 @@ export const ProductsSection: React.FC = () => {
     if (filter === 'All') return true;
     if (filter === 'Fintech') return p.category.includes('Fintech') || p.category.includes('House');
     if (filter === 'Campus') return p.category.includes('Campus') || p.category.includes('News');
-    if (filter === 'Tools') return p.category.includes('Creative') || p.category.includes('Utilities');
+    if (filter === 'Tools') return p.category.includes('Creative') || p.category.includes('Utilities') || p.category.includes('Books');
     return true;
   });
 

@@ -6,6 +6,7 @@ import {
   ArrowLeft,
   QrCode,
   Newspaper,
+  BookOpen,
   Wallet,
   MapPin,
   Lock,
@@ -23,6 +24,19 @@ export const metadata: Metadata = {
 
 export default function PrivacyDirectoryPage() {
   const policies = [
+    {
+      id: 'al-quran',
+      name: "Al-Qur'an Bangla (আল কোরআন বাংলা)",
+      packageId: 'com.algoel.alquran',
+      icon: <BookOpen className="w-6 h-6 text-amber-400" />,
+      iconBg: 'bg-amber-500/10 border-amber-500/20',
+      description:
+        'Authentic Quran with Bengali translation, word meanings, and multi-Qari audio recitation. Zero PII collection, client-only bookmarks, and 100% ad-free experience.',
+      href: '/privacy/al-quran',
+      playStoreUrl:
+        'https://play.google.com/store/apps/details?id=com.algoel.alquran',
+      badge: '100% Free & Ad-Free',
+    },
     {
       id: 'safeqr',
       name: 'SafeQR — QR & Barcode Scanner',

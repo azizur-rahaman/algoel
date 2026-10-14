@@ -5,7 +5,8 @@ export type AppCategory =
   | 'Education & Campus'
   | 'Creative & Design'
   | 'Utilities & Tools'
-  | 'News & Magazines';
+  | 'News & Magazines'
+  | 'Books & Reference';
 
 export type Platform = 'iOS' | 'Android' | 'iPadOS' | 'watchOS' | 'macOS';
 

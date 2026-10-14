@@ -2,6 +2,76 @@ import { AppItem } from '@/types';
 
 export const APPS_DATA: AppItem[] = [
   {
+    id: 'al-quran',
+    name: "Al-Qur'an Bangla",
+    tagline: 'Authentic Quran with Bengali Translation, Audio Recitation & Word Meanings',
+    summary:
+      "A complete, beautifully crafted digital Quran experience featuring all 114 Surahs, authentic Bengali translation, word-by-word meanings, multi-Qari audio recitations, and zero-distraction dark theme.",
+    description:
+      "Al-Qur'an Bangla brings the divine guidance of the Holy Qur'an to mobile devices with unmatched clarity and reverence. Built with Flutter and BLoC architecture, it offers full 114 Surahs with crystal-clear Indo-Pak and Uthmani calligraphy, authentic Bengali translations (Muhiuddin Khan & Islamic Foundation), Bengali transliteration, word-by-word root meanings, and synchronized verse-by-verse audio recitation from world-renowned Qaris (including Mishary Rashid Alafasy and Abdul Basit). Designed with a warm dark stone aesthetic, it features an integrated background audio player with playback speed controls, seamless surah and ayah search, reading history bookmarks, and complete offline capability.",
+    category: 'Books & Reference',
+    accentGradient: 'from-amber-400 via-amber-600 to-emerald-700',
+    glowColor: 'rgba(217, 119, 6, 0.4)',
+    iconBg: 'bg-gradient-to-br from-amber-500 via-amber-600 to-emerald-800',
+    iconSymbol: 'BookOpen',
+    platforms: ['Android', 'iOS', 'macOS'],
+    rating: 5.0,
+    reviewsCount: 'New Release',
+    downloads: 'New Release',
+    appStoreUrl: 'https://play.google.com/store/apps/details?id=com.algoel.alquran',
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.algoel.alquran',
+    featured: true,
+    awardBadge: '5.0★ Rated • 100% Free, Ad-Free & Offline Capable',
+    features: [
+      'Complete 114 Surahs: Arabic script, Bengali transliteration, and authentic Bengali translation for all 6,236 Ayahs',
+      'Multi-Qari Audio Streaming: Seamless background recitation streaming and caching with playback speed controls (0.75x–2.0x)',
+      'Floating Mini Player: Persistent bottom audio controller with verse synchronization and progress scrubber',
+      'Word-by-Word Meanings: Deep linguistic breakdown with Bengali meanings for every Arabic root word',
+      'Smart Bengali Search: Instant search across surah titles, revelations (Makki/Madani), verse text, and keywords',
+      'Personal Bookmarks & History: Save favorite ayahs and automatically resume from your exact last-read verse',
+      'Reverent Dark Aesthetic: Dark stone (#0C0A09) & warm gold palette engineered for eye comfort during night recitation',
+    ],
+    techSpecs: ['Flutter 3 & Dart', 'flutter_bloc State Management', 'just_audio & audio_session', 'GoRouter Navigation', 'Shared Preferences Vault', 'Material 3 Dark Theme'],
+    releaseYear: '2026',
+    version: '1.0.0',
+    screenshots: [
+      {
+        title: 'Reverent Surah Reader',
+        subtitle: 'Arabic calligraphy with synchronized Bengali translation & word breakdown',
+        screenType: 'dashboard',
+        accentGradient: 'from-amber-950/70 to-stone-950',
+        mockupData: {
+          heading: 'সূরা আল-ফাতিহা (মাক্কী • ৭ আয়াত)',
+          statNumber: '১১৪ সূরা সম্পন্ন',
+          statLabel: 'মিশারি রশিদ আলাফাসি তেলাওয়াত সক্রিয়',
+          tags: ['বাংলা অনুবাদ', 'অডিও প্লেয়ার', 'অফলাইন ক্যাশ'],
+          previewBullets: [
+            'বিসমিল্লাহির রাহমানির রাহীম — পরম করুণাময় অসীম দয়ালু আল্লাহর নামে',
+            'শব্দার্থ ও উচ্চারণ সহ পূর্ণাঙ্গ আয়াত প্রদর্শন',
+            'লাস্ট রিড বুকমার্ক: সূরা আল-বাক্বারাহ (আয়াত ২৫৫)',
+          ],
+        },
+      },
+      {
+        title: 'Background Audio Sanctuary',
+        subtitle: 'Multi-reciter streaming with lock-screen notification controls',
+        screenType: 'player',
+        accentGradient: 'from-emerald-950/70 to-stone-950',
+        mockupData: {
+          heading: 'তেলাওয়াত প্লেয়ার',
+          statNumber: '৩ জন প্রখ্যাত ক্বারী',
+          statLabel: 'আলাফাসি • আব্দুল বাসিত • সুদাইস',
+          tags: ['ব্যাকগ্রাউন্ড প্লে', 'গতি নিয়ন্ত্রণ', 'লক-স্ক্রিন'],
+          previewBullets: [
+            'চলমান: সূরা ইয়াসিন (১:৪৫ / ৯:৩০)',
+            'হেডসেট ও ব্লুটুথ কন্ট্রোল সাপোর্ট',
+            'জিরো বিজ্ঞাপন • সম্পূর্ণ পবিত্র ও নিরবচ্ছিন্ন অভিজ্ঞতা',
+          ],
+        },
+      },
+    ],
+  },
+  {
     id: 'lenden',
     name: 'Lenden',
     tagline: 'Secure Personal Financial Ledger & Credit Tracker',
