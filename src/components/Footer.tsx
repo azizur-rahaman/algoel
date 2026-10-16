@@ -125,11 +125,17 @@ export const Footer: React.FC = () => {
             </p>
 
             <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1.5 text-xs text-zinc-400">
-              <Link href="/privacy/safeqr" className="hover:underline hover:text-white text-cyan-400">
-                SafeQR Privacy
+              <Link href="/privacy" className="hover:underline hover:text-white text-emerald-400 font-medium">
+                Privacy Directory
               </Link>
-              <Link href="/privacy/news-app-flash" className="hover:underline hover:text-white">
-                News App Flash Privacy
+              <Link href="/privacy/bhalo-kaj" className="hover:underline hover:text-white text-emerald-400">
+                Bhalo Kaj Privacy
+              </Link>
+              <Link href="/privacy/al-quran" className="hover:underline hover:text-white">
+                Al-Qur&apos;an Privacy
+              </Link>
+              <Link href="/privacy/safeqr" className="hover:underline hover:text-white">
+                SafeQR Privacy
               </Link>
               <Link href="/contact" className="hover:underline hover:text-white">
                 Support Desk

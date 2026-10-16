@@ -20,6 +20,7 @@ import {
   Newspaper,
   QrCode,
   BookOpen,
+  Heart,
 } from 'lucide-react';
 
 interface AppShowcaseProps {
@@ -48,6 +49,10 @@ export const AppShowcase: React.FC<AppShowcaseProps> = ({ apps }) => {
 
   const renderIcon = (id: string, className = 'w-6 h-6') => {
     switch (id) {
+      case 'bhalo-kaj':
+        return <Heart className={className} />;
+      case 'al-quran':
+        return <BookOpen className={className} />;
       case 'lenden':
         return <ShieldCheck className={className} />;
       case 'safeqr':

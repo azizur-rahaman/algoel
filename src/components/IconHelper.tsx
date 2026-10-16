@@ -35,6 +35,7 @@ import {
   BookOpen,
   Book,
   Newspaper,
+  Heart,
 } from 'lucide-react';
 
 interface IconHelperProps {
@@ -103,6 +104,8 @@ export const IconHelper: React.FC<IconHelperProps> = ({ name, className = 'w-5 h
       return <BookOpen {...props} />;
     case 'newspaper':
       return <Newspaper {...props} />;
+    case 'heart':
+      return <Heart {...props} />;
     default:
       return <Sparkles {...props} />;
   }

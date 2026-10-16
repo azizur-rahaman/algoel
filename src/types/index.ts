@@ -6,14 +6,15 @@ export type AppCategory =
   | 'Creative & Design'
   | 'Utilities & Tools'
   | 'News & Magazines'
-  | 'Books & Reference';
+  | 'Books & Reference'
+  | 'Productivity & Lifestyle';
 
-export type Platform = 'iOS' | 'Android' | 'iPadOS' | 'watchOS' | 'macOS';
+export type Platform = 'iOS' | 'Android' | 'iPadOS' | 'watchOS' | 'macOS' | 'Web';
 
 export interface AppScreenshot {
   title: string;
   subtitle: string;
-  screenType: 'dashboard' | 'camera' | 'analytics' | 'player' | 'security' | 'feed';
+  screenType: 'dashboard' | 'camera' | 'analytics' | 'player' | 'security' | 'feed' | 'viewer';
   accentGradient: string;
   mockupData: {
     heading: string;

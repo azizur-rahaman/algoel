@@ -24,6 +24,7 @@ import {
   Calculator,
   Newspaper,
   QrCode,
+  Heart,
 } from 'lucide-react';
 
 interface PhoneMockupProps {
@@ -39,6 +40,8 @@ export const PhoneMockup: React.FC<PhoneMockupProps> = ({ apps, initialAppId = '
 
   const renderIcon = (id: string) => {
     switch (id) {
+      case 'bhalo-kaj':
+        return <Heart className="w-5 h-5 text-emerald-400" />;
       case 'lenden':
         return <Wallet className="w-5 h-5 text-emerald-400" />;
       case 'safeqr':
@@ -71,7 +74,7 @@ export const PhoneMockup: React.FC<PhoneMockupProps> = ({ apps, initialAppId = '
       {/* App Switcher Pills (Top of phone) */}
       <div className="mb-4 flex flex-wrap justify-center items-center gap-1.5 p-1.5 rounded-full bg-zinc-900/80 border border-white/10 backdrop-blur-md z-10 shadow-lg max-w-sm">
         {apps
-          .filter((a) => ['lenden', 'safeqr', 'ghorlagbee', 'news-app-flash'].includes(a.id))
+          .filter((a) => ['bhalo-kaj', 'lenden', 'safeqr', 'news-app-flash'].includes(a.id))
           .map((app) => (
             <button
               key={app.id}
@@ -267,6 +270,59 @@ export const PhoneMockup: React.FC<PhoneMockupProps> = ({ apps, initialAppId = '
                   >
                     {interactiveState === 0 ? 'Ask Professor AI →' : 'Reset AI Prompt'}
                   </button>
+                </div>
+              </div>
+            )}
+
+            {activeApp.id === 'bhalo-kaj' && (
+              <div className="space-y-3">
+                <div className="p-3.5 rounded-2xl bg-gradient-to-br from-emerald-950/60 via-teal-950/40 to-slate-900 border border-emerald-500/20">
+                  <div className="flex items-center justify-between text-[10px] text-emerald-400 font-medium mb-1">
+                    <span className="flex items-center gap-1">
+                      <Heart className="w-3 h-3 text-emerald-400" />
+                      ভালো কাজ • প্রতিদিন
+                    </span>
+                    <span className="text-emerald-300 font-mono font-bold">100% Offline</span>
+                  </div>
+                  <div className="text-sm font-bold text-white mt-1 flex items-center justify-between">
+                    <span>{interactiveState === 0 ? 'আজ কি ভালো কাজ করেছেন?' : 'মাসিক হিটম্যাপ ও অগ্রগতি'}</span>
+                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-emerald-500/20 text-emerald-400 font-mono">
+                      {interactiveState === 0 ? '+1 ট্যাপ' : '২৮ দিন'}
+                    </span>
+                  </div>
+                  <div className="text-[11px] text-zinc-300 my-1.5 p-2 rounded-lg bg-black/40 border border-white/5 space-y-1">
+                    {interactiveState === 0 ? (
+                      <>
+                        <div className="text-white font-semibold">🤲 দান বা সদকা (এতিমখানায় খাবার)</div>
+                        <div className="text-zinc-400 text-[10px]">টাইমস্ট্যাম্প: আজ দুপুর ১:১৫ • ড্রাফট ডাটাবেস</div>
+                      </>
+                    ) : (
+                      <>
+                        <div className="text-white font-semibold">অক্টোবর ২০২৬: ৭৪টি কাজ সম্পন্ন</div>
+                        <div className="text-zinc-400 text-[10px]">৪-লেভেল অ্যাক্টিভিটি হিটম্যাপ • গ্রিন স্ট্রিক</div>
+                      </>
+                    )}
+                  </div>
+                  <div className="space-y-1.5 text-[11px] text-zinc-300">
+                    <div className="p-2 rounded-lg bg-black/40 border border-white/5 flex items-center justify-between">
+                      <span className="line-clamp-1">পিডিএফ রিপোর্ট: ডাউনলোড রেডি</span>
+                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                    </div>
+                    <div className="p-2 rounded-lg bg-black/40 border border-white/5 flex items-center justify-between">
+                      <span className="line-clamp-1">প্রাইভেসি: জিরো ক্লাউড ট্র্যাকার • নো অ্যাড</span>
+                      <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+                    </div>
+                  </div>
+                  <button
+                    onClick={() => setInteractiveState((prev) => (prev + 1) % 2)}
+                    className="mt-2.5 w-full py-1.5 text-[10px] font-semibold text-emerald-300 bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 rounded-lg transition-all text-center"
+                  >
+                    {interactiveState === 0 ? 'সুইচ টু হিটম্যাপ ও রিপোর্ট ভিউ →' : 'সুইচ টু আজকের ভালো কাজ →'}
+                  </button>
+                </div>
+                <div className="p-2 rounded-xl bg-zinc-900/60 border border-white/5 text-[10px] text-zinc-400 flex items-center justify-between">
+                  <span>Data Engine:</span>
+                  <span className="text-emerald-400 font-semibold">Drift SQLite • Local Sandbox</span>
                 </div>
               </div>
             )}

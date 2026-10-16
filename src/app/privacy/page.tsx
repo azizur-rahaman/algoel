@@ -14,6 +14,7 @@ import {
   HardDrive,
   ExternalLink,
   ChevronRight,
+  Heart,
 } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -24,6 +25,19 @@ export const metadata: Metadata = {
 
 export default function PrivacyDirectoryPage() {
   const policies = [
+    {
+      id: 'bhalo-kaj',
+      name: 'Bhalo Kaj — ভালো কাজ (Daily Good Deeds)',
+      packageId: 'com.bhalokaj.bhalo_kaj',
+      icon: <Heart className="w-6 h-6 text-emerald-400" />,
+      iconBg: 'bg-emerald-500/10 border-emerald-500/20',
+      description:
+        'Daily good deeds habit tracker with GitHub-style activity heatmaps and PDF reports. 100% offline Drift SQLite database, zero personal data collection, zero cloud trackers, and zero advertisements.',
+      href: '/privacy/bhalo-kaj',
+      playStoreUrl:
+        'https://play.google.com/store/apps/details?id=com.bhalokaj.bhalo_kaj',
+      badge: '100% Offline & Ad-Free',
+    },
     {
       id: 'al-quran',
       name: "Al-Qur'an Bangla (আল কোরআন বাংলা)",

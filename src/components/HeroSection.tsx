@@ -123,7 +123,7 @@ export const HeroSection: React.FC = () => {
                   {/* Bottom Bar */}
                   <div className="flex items-center justify-between text-[10px] sm:text-xs font-medium text-black/80 z-10 border-t border-black/10 pt-2">
                     <span className="truncate">{app.category}</span>
-                    <span className="font-bold">★ {app.id === 'lenden' || app.id === 'safeqr' || app.id === 'news-app-flash' ? '5.0' : app.id === 'ghorlagbee' ? '4.6' : '4.2'}</span>
+                    <span className="font-bold">★ {app.id === 'bhalo-kaj' || app.id === 'al-quran' || app.id === 'lenden' || app.id === 'safeqr' || app.id === 'news-app-flash' ? '5.0' : app.id === 'ghorlagbee' ? '4.6' : '4.2'}</span>
                   </div>
                 </div>
               </div>

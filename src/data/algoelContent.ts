@@ -43,6 +43,38 @@ export interface AlgoelSpotlight {
 
 export const ALGOEL_PRODUCTS: AlgoelProduct[] = [
   {
+    id: 'bhalo-kaj',
+    name: 'Bhalo Kaj (ভালো কাজ)',
+    tagline: 'Daily Good Deeds Habit Tracker with GitHub-Style Activity Heatmap & PDF Reports',
+    category: 'Lifestyle & Habit',
+    released: '2026',
+    bgColor: '#E8F5EE',
+    invertColor: false,
+    rating: '5.0★ Perfect Store Rating',
+    downloads: 'New Release',
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.bhalokaj.bhalo_kaj',
+    iconSymbol: 'Heart',
+    bulletPoints: [
+      'Released 2026 • Built with Flutter, BLoC & Drift SQLite',
+      'One-tap daily deed recording with custom descriptions & 8 quick suggestion chips',
+      'GitHub-style 4-tier monthly activity heatmap tracking consistency & deed streaks',
+      'Interactive day inspection bottom sheet with chronological timestamps & deletion control',
+      'High-resolution multi-page Bengali PDF report generator with Google Noto Sans fonts',
+      '100% Offline, Ad-Free & Privacy-First: zero trackers, zero cloud logs, 100% local persistence',
+    ],
+    mockupData: {
+      badge: 'Heatmap • 100% Offline',
+      headline: 'আজকের ভালো কাজ',
+      stat: '২৮ দিন সক্রিয়',
+      statLabel: 'মোট ভালো কাজ: ৭৪টি • ৪-লেভেল হিটম্যাপ',
+      details: [
+        '🤲 দান বা সদকা: পথশিশুদের মাঝে খাবার ও বই বিতরণ',
+        '🌱 গাছ লাগানো: ২টি ফলদ ও ঔষধি গাছ রোপণ',
+        '📄 প্রিন্ট-রেডি মাসিক বাংলা পিডিএফ রিপোর্ট এক্সপোর্ট সম্পন্ন',
+      ],
+    },
+  },
+  {
     id: 'al-quran',
     name: "Al-Qur'an Bangla",
     tagline: 'Authentic Quran with Bengali Translation, Audio Recitation & Word Meanings',
