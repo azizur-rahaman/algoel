@@ -28,14 +28,14 @@ export default function PrivacyDirectoryPage() {
     {
       id: 'bhalo-kaj',
       name: 'Bhalo Kaj — ভালো কাজ (Daily Good Deeds)',
-      packageId: 'com.bhalokaj.bhalo_kaj',
+      packageId: 'com.algoel.bhalokaj',
       icon: <Heart className="w-6 h-6 text-emerald-400" />,
       iconBg: 'bg-emerald-500/10 border-emerald-500/20',
       description:
         'Daily good deeds habit tracker with GitHub-style activity heatmaps and PDF reports. 100% offline Drift SQLite database, zero personal data collection, zero cloud trackers, and zero advertisements.',
       href: '/privacy/bhalo-kaj',
       playStoreUrl:
-        'https://play.google.com/store/apps/details?id=com.bhalokaj.bhalo_kaj',
+        'https://play.google.com/store/apps/details?id=com.algoel.bhalokaj',
       badge: '100% Offline & Ad-Free',
     },
     {

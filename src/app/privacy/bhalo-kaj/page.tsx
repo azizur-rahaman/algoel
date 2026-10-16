@@ -23,7 +23,7 @@ import {
 export const metadata: Metadata = {
   title: 'Privacy Policy — Bhalo Kaj (ভালো কাজ) | Algoel Technologies',
   description:
-    'Official Privacy Policy for Bhalo Kaj (com.bhalokaj.bhalo_kaj) by Algoel Technologies. 100% offline-first good deeds tracking, on-device Drift SQLite database, zero personal data collection, and Google Play Store compliance.',
+    'Official Privacy Policy for Bhalo Kaj (com.algoel.bhalokaj) by Algoel Technologies. 100% offline-first good deeds tracking, on-device Drift SQLite database, zero personal data collection, and Google Play Store compliance.',
 };
 
 export default function BhaloKajPrivacyPage() {
@@ -57,7 +57,7 @@ export default function BhaloKajPrivacyPage() {
             </Link>
 
             <a
-              href="https://play.google.com/store/apps/details?id=com.bhalokaj.bhalo_kaj"
+              href="https://play.google.com/store/apps/details?id=com.algoel.bhalokaj"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs transition-colors shadow-sm"
@@ -91,7 +91,7 @@ export default function BhaloKajPrivacyPage() {
                     Privacy Policy for Bhalo Kaj (ভালো কাজ)
                   </h1>
                   <p className="text-xs sm:text-sm text-zinc-400 font-mono mt-0.5">
-                    Package ID: com.bhalokaj.bhalo_kaj
+                    Package ID: com.algoel.bhalokaj
                   </p>
                 </div>
               </div>
@@ -185,7 +185,7 @@ export default function BhaloKajPrivacyPage() {
               Introduction & Core Philosophy
             </h2>
             <p>
-              This Privacy Policy explains how <strong>Algoel Technologies</strong> (&quot;Algoel&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) handles your data in connection with the mobile application <strong>Bhalo Kaj (ভালো কাজ)</strong> (Package ID: <code className="text-emerald-300 font-mono bg-zinc-950 px-1.5 py-0.5 rounded border border-white/10">com.bhalokaj.bhalo_kaj</code>).
+              This Privacy Policy explains how <strong>Algoel Technologies</strong> (&quot;Algoel&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) handles your data in connection with the mobile application <strong>Bhalo Kaj (ভালো কাজ)</strong> (Package ID: <code className="text-emerald-300 font-mono bg-zinc-950 px-1.5 py-0.5 rounded border border-white/10">com.algoel.bhalokaj</code>).
             </p>
             <p>
               We believe daily acts of benevolence, moral mindfulness, and kindness are intimate personal journeys. Our founding design principle is <strong>absolute privacy by architecture</strong>. Bhalo Kaj is intentionally built as an offline-first utility that operates independently of cloud servers. We do not collect, monetize, sell, or profile your daily deeds.

@@ -18,8 +18,8 @@ export const APPS_DATA: AppItem[] = [
     rating: 5.0,
     reviewsCount: 'New Release',
     downloads: 'New Release',
-    appStoreUrl: 'https://play.google.com/store/apps/details?id=com.bhalokaj.bhalo_kaj',
-    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.bhalokaj.bhalo_kaj',
+    appStoreUrl: 'https://play.google.com/store/apps/details?id=com.algoel.bhalokaj',
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.algoel.bhalokaj',
     featured: true,
     awardBadge: '5.0★ Rated • 100% Offline, Ad-Free & Privacy First',
     features: [

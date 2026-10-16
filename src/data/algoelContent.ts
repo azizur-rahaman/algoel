@@ -52,7 +52,7 @@ export const ALGOEL_PRODUCTS: AlgoelProduct[] = [
     invertColor: false,
     rating: '5.0★ Perfect Store Rating',
     downloads: 'New Release',
-    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.bhalokaj.bhalo_kaj',
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.algoel.bhalokaj',
     iconSymbol: 'Heart',
     bulletPoints: [
       'Released 2026 • Built with Flutter, BLoC & Drift SQLite',
