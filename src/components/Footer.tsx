@@ -128,6 +128,9 @@ export const Footer: React.FC = () => {
               <Link href="/privacy" className="hover:underline hover:text-white text-emerald-400 font-medium">
                 Privacy Directory
               </Link>
+              <Link href="/privacy/weighnote" className="hover:underline hover:text-white text-emerald-400">
+                WeighNote Privacy
+              </Link>
               <Link href="/privacy/bhalo-kaj" className="hover:underline hover:text-white text-emerald-400">
                 Bhalo Kaj Privacy
               </Link>

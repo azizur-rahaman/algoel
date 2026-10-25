@@ -43,6 +43,38 @@ export interface AlgoelSpotlight {
 
 export const ALGOEL_PRODUCTS: AlgoelProduct[] = [
   {
+    id: 'weighnote',
+    name: 'WeighNote (ডিজিটাল ওজন খাতা)',
+    tagline: 'Precision Weight Batch Ledger, Auto Maund Conversion & PDF Invoicing',
+    category: 'Utilities & Trade',
+    released: '2026',
+    bgColor: '#E6F4EA',
+    invertColor: false,
+    rating: '5.0★ Perfect Store Rating',
+    downloads: 'New Release',
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.algoel.weight_note',
+    iconSymbol: 'Scale',
+    bulletPoints: [
+      'Released 2026 • Built with Flutter, BLoC & SQLite Local Storage',
+      'High-speed batch numerical pad with single-tap Save & Next workflow',
+      'Real-time Maund (মন) & Kg breakdown calculations (৪০ কেজি = ১ মণ)',
+      'Instant unit price (৳/kg) calculation and grand total valuation',
+      'Print-ready professional PDF ledger invoices with business header & notes',
+      '100% Offline & Private: zero trackers, zero cloud accounts, 100% on-device data',
+    ],
+    mockupData: {
+      badge: 'Maund Engine • 100% Offline',
+      headline: 'বর্তমান ওজন চালান',
+      stat: '৩৩৫ কেজি (৮ মণ ১৫ কেজি)',
+      statLabel: 'মোট মূল্য: ৳ ৪৭,৭৩৭.৫০ • ৩টি রেকর্ড',
+      details: [
+        '⚖️ এন্ট্রি #০১: ২৫২ কেজি (১ পিস)',
+        '⚖️ এন্ট্রি #০২: ৫৮ কেজি (১ পিস)',
+        '⚖️ এন্ট্রি #০৩: ২৫ কেজি (১ পিস)',
+      ],
+    },
+  },
+  {
     id: 'bhalo-kaj',
     name: 'Bhalo Kaj (ভালো কাজ)',
     tagline: 'Daily Good Deeds Habit Tracker with GitHub-Style Activity Heatmap & PDF Reports',
