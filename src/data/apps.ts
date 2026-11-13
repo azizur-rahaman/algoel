@@ -2,13 +2,13 @@ import { AppItem } from '@/types';
 
 export const APPS_DATA: AppItem[] = [
   {
-    id: 'weighnote',
-    name: 'WeighNote (ডিজিটাল ওজন খাতা)',
+    id: 'weightnote',
+    name: 'weightnote (ডিজিটাল ওজন খাতা)',
     tagline: 'Precision Weight Batch Ledger, Auto Maund Conversion & PDF Invoicing',
     summary:
       'A fast, offline-first digital weighing ledger designed for trade, agriculture, poultry, livestock, and wholesale commodity markets. Record serial batches with quick numpad input, calculate automatic Maund (মন) & Kg breakdowns, compute real-time total pricing, and generate print-ready PDF reports.',
     description:
-      'WeighNote (ডিজিটাল ওজন খাতা) modernizes wholesale commodities, agriculture, poultry markets, and industrial weighing into an effortless digital ledger. Designed with high-contrast accessibility and responsive typography, WeighNote allows traders, scale operators, and wholesalers to log weights rapidly using an optimized full-width quick numpad. The app automatically calculates running totals, average piece weights, unit price totals (৳), and traditional Maund/Mon (৪০ কেজি = ১ মণ) conversions in real time. Sessions can be locked, reviewed, and exported into high-resolution multi-page PDF ledger reports with customizable business headers, notes, and instant sharing. Built with Flutter, BLoC, and on-device SQLite, WeighNote operates 100% offline, requires zero account registration, and guarantees complete data privacy.',
+      'weightnote (ডিজিটাল ওজন খাতা) modernizes wholesale commodities, agriculture, poultry markets, and industrial weighing into an effortless digital ledger. Designed with high-contrast accessibility and responsive typography, weightnote allows traders, scale operators, and wholesalers to log weights rapidly using an optimized full-width quick numpad. The app automatically calculates running totals, average piece weights, unit price totals (৳), and traditional Maund/Mon (৪০ কেজি = ১ মণ) conversions in real time. Sessions can be locked, reviewed, and exported into high-resolution multi-page PDF ledger reports with customizable business headers, notes, and instant sharing. Built with Flutter, BLoC, and on-device SQLite, weightnote operates 100% offline, requires zero account registration, and guarantees complete data privacy.',
     category: 'Utilities & Tools',
     accentGradient: 'from-emerald-600 via-teal-600 to-green-500',
     glowColor: 'rgba(16, 185, 129, 0.4)',
@@ -18,8 +18,8 @@ export const APPS_DATA: AppItem[] = [
     rating: 5.0,
     reviewsCount: 'New Release',
     downloads: 'New Release',
-    appStoreUrl: 'https://play.google.com/store/apps/details?id=com.algoel.weight_note',
-    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.algoel.weight_note',
+    appStoreUrl: 'https://play.google.com/store/apps/details?id=com.algoel.weightnote',
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.algoel.weightnote',
     featured: true,
     awardBadge: '5.0★ Rated • 100% Offline, Ad-Free & Trade Ready',
     features: [
@@ -50,7 +50,7 @@ export const APPS_DATA: AppItem[] = [
         screenType: 'dashboard',
         accentGradient: 'from-emerald-950/70 to-zinc-950',
         mockupData: {
-          heading: 'WeighNote — ডিজিটাল ওজন খাতা',
+          heading: 'weightnote — ডিজিটাল ওজন খাতা',
           statNumber: '৩৩৫ কেজি (৮ মণ ১৫ কেজি)',
           statLabel: 'মোট মূল্য: ৳ ৪৭,৭৩৭.৫০',
           tags: ['মণ রূপান্তর', 'অফলাইন ডাটাবেস', 'লাইভ প্রাইসিং'],

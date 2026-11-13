@@ -27,16 +27,16 @@ export const metadata: Metadata = {
 export default function PrivacyDirectoryPage() {
   const policies = [
     {
-      id: 'weighnote',
-      name: 'WeighNote — Digital Weight Ledger (ডিজিটাল ওজন খাতা)',
-      packageId: 'com.algoel.weight_note',
+      id: 'weightnote',
+      name: 'weightnote — Digital Weight Ledger (ডিজিটাল ওজন খাতা)',
+      packageId: 'com.algoel.weightnote',
       icon: <Scale className="w-6 h-6 text-emerald-400" />,
       iconBg: 'bg-emerald-500/10 border-emerald-500/20',
       description:
         'Professional offline-first weight batch ledger with automatic Maund (মন) conversion, real-time pricing, and PDF reports. 100% on-device SQLite storage, zero personal data collection, zero cloud trackers, and zero advertisements.',
-      href: '/privacy/weighnote',
+      href: '/privacy/weightnote',
       playStoreUrl:
-        'https://play.google.com/store/apps/details?id=com.algoel.weight_note',
+        'https://play.google.com/store/apps/details?id=com.algoel.weightnote',
       badge: '100% Offline & Private',
     },
     {

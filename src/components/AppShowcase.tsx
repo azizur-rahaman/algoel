@@ -50,7 +50,7 @@ export const AppShowcase: React.FC<AppShowcaseProps> = ({ apps }) => {
 
   const renderIcon = (id: string, className = 'w-6 h-6') => {
     switch (id) {
-      case 'weighnote':
+      case 'weightnote':
         return <Scale className={className} />;
       case 'bhalo-kaj':
         return <Heart className={className} />;

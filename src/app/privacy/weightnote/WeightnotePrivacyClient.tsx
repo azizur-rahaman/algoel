@@ -23,7 +23,7 @@ import {
   Globe,
 } from 'lucide-react';
 
-export default function WeighNotePrivacyClient() {
+export default function WeightnotePrivacyClient() {
   const [lang, setLang] = useState<'en' | 'bn'>('en');
 
   const isBn = lang === 'bn';
@@ -84,7 +84,7 @@ export default function WeighNotePrivacyClient() {
             </Link>
 
             <a
-              href="https://play.google.com/store/apps/details?id=com.algoel.weight_note"
+              href="https://play.google.com/store/apps/details?id=com.algoel.weightnote"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs transition-colors shadow-sm"
@@ -128,11 +128,11 @@ export default function WeighNotePrivacyClient() {
                 <div>
                   <h1 className="text-2xl sm:text-3xl md:text-4xl font-black text-white tracking-tight">
                     {isBn
-                      ? 'WeighNote (ডিজিটাল ওজন খাতা) — প্রাইভেসি পলিসি'
-                      : 'Privacy Policy for WeighNote (ডিজিটাল ওজন খাতা)'}
+                      ? 'weightnote (ডিজিটাল ওজন খাতা) — প্রাইভেসি পলিসি'
+                      : 'Privacy Policy for weightnote (ডিজিটাল ওজন খাতা)'}
                   </h1>
                   <p className="text-xs sm:text-sm text-zinc-400 font-mono mt-0.5">
-                    Package ID: com.algoel.weight_note
+                    Package ID: com.algoel.weightnote
                   </p>
                 </div>
               </div>
@@ -146,7 +146,7 @@ export default function WeighNotePrivacyClient() {
                   <span>{isBn ? 'কার্যকর তারিখ' : 'Effective Date'}</span>
                 </div>
                 <div className="text-white font-medium">
-                  {isBn ? '১০ নভেম্বর, ২০২৬' : 'November 10, 2026'}
+                  {isBn ? '১৩ নভেম্বর, ২০২৬' : 'November 13, 2026'}
                 </div>
               </div>
 
@@ -156,7 +156,7 @@ export default function WeighNotePrivacyClient() {
                   <span>{isBn ? 'সর্বশেষ আপডেট' : 'Last Updated'}</span>
                 </div>
                 <div className="text-white font-medium">
-                  {isBn ? '১০ নভেম্বর, ২০২৬' : 'November 10, 2026'}
+                  {isBn ? '১৩ নভেম্বর, ২০২৬' : 'November 13, 2026'}
                 </div>
               </div>
 
@@ -214,8 +214,8 @@ export default function WeighNotePrivacyClient() {
               </h3>
               <p className="text-xs text-zinc-400 leading-relaxed">
                 {isBn
-                  ? 'সমস্ত ব্যাচ ওজনের রেকর্ড, সিরিয়াল, মণের হিসাব ও দর শুধুমাত্র আপনার ডিভাইসের লোকাল ডাটাবেজে (weigh_note.db) সংরক্ষিত থাকে। কোনো রিমোট সার্ভারে আপলোড করা হয় না।'
-                  : 'All batch weight logs, serials, unit prices, and trade notes are saved strictly in your local device database (weigh_note.db). Nothing is ever uploaded to a remote server.'}
+                  ? 'সমস্ত ব্যাচ ওজনের রেকর্ড, সিরিয়াল, মণের হিসাব ও দর শুধুমাত্র আপনার ডিভাইসের লোকাল ডাটাবেজে (weightnote.db) সংরক্ষিত থাকে। কোনো রিমোট সার্ভারে আপলোড করা হয় না।'
+                  : 'All batch weight logs, serials, unit prices, and trade notes are saved strictly in your local device database (weightnote.db). Nothing is ever uploaded to a remote server.'}
               </p>
             </div>
 
@@ -229,7 +229,7 @@ export default function WeighNotePrivacyClient() {
               <p className="text-xs text-zinc-400 leading-relaxed">
                 {isBn
                   ? 'কোনো থার্ড-পার্টি বিজ্ঞাপন নেটওয়ার্ক নেই, কোনো ট্র্যাকার বা ব্যাকগ্রাউন্ড নজরদারি নেই। ইন্টারনেট সংযোগ ছাড়াই অ্যাপটি সম্পূর্ণ কার্যকর।'
-                  : 'Zero third-party advertisement SDKs, zero behavioral trackers, and zero telemetry analytics. WeighNote functions seamlessly without an active internet connection.'}
+                  : 'Zero third-party advertisement SDKs, zero behavioral trackers, and zero telemetry analytics. weightnote functions seamlessly without an active internet connection.'}
               </p>
             </div>
           </div>
@@ -248,19 +248,19 @@ export default function WeighNotePrivacyClient() {
             {isBn ? (
               <>
                 <p>
-                  এই গোপনীয়তা নীতিতে (Privacy Policy) ব্যাখ্যা করা হয়েছে কীভাবে <strong>Algoel Technologies</strong> (&quot;Algoel&quot;, &quot;আমরা&quot;) মোবাইল অ্যাপ্লিকেশন <strong>WeighNote (ডিজিটাল ওজন খাতা)</strong> (প্যাকেজ আইডি: <code className="text-emerald-300 font-mono bg-zinc-950 px-1.5 py-0.5 rounded border border-white/10">com.algoel.weight_note</code>)-এর তথ্যাবলি পরিচালনা করে।
+                  এই গোপনীয়তা নীতিতে (Privacy Policy) ব্যাখ্যা করা হয়েছে কীভাবে <strong>Algoel Technologies</strong> (&quot;Algoel&quot;, &quot;আমরা&quot;) মোবাইল অ্যাপ্লিকেশন <strong>weightnote (ডিজিটাল ওজন খাতা)</strong> (প্যাকেজ আইডি: <code className="text-emerald-300 font-mono bg-zinc-950 px-1.5 py-0.5 rounded border border-white/10">com.algoel.weightnote</code>)-এর তথ্যাবলি পরিচালনা করে।
                 </p>
                 <p>
-                  WeighNote মূলত গবাদিপশু, পোল্ট্রি খামার, ধান-চাল-শস্যের আড়ত, মৎস্য ব্যবসা, ফলমূল, শাকসবজি এবং পাইকারি ওজনের পাল্লার বাণিজ্যিক হিসাব রাখার জন্য তৈরি। বাণিজ্যিক বা কৃষিজ বাণিজ্যে ওজন, দর-দাম ও লেনদেনের গোপনীয়তা অত্যন্ত সংবেদনশীল। আমাদের স্থাপত্যের মূল ভিত্তি হলো <strong>শুরু থেকেই পূর্ণাঙ্গ গোপনীয়তা (Privacy by Design)</strong>: WeighNote একটি অফলাইন-ফার্স্ট ইউটিলিটি যা সম্পূর্ণভাবে আপনার নিজস্ব ডিভাইসে কাজ করে। আমরা আপনার কোনো বাণিজ্যিক রেকর্ড বা তথ্য সংগ্রহ, বিক্রয়, মনিটাইজ বা কোনো তৃতীয় পক্ষের কাছে হস্তান্তর করি না।
+                  weightnote মূলত গবাদিপশু, পোল্ট্রি খামার, ধান-চাল-শস্যের আড়ত, মৎস্য ব্যবসা, ফলমূল, শাকসবজি এবং পাইকারি ওজনের পাল্লার বাণিজ্যিক হিসাব রাখার জন্য তৈরি। বাণিজ্যিক বা কৃষিজ বাণিজ্যে ওজন, দর-দাম ও লেনদেনের গোপনীয়তা অত্যন্ত সংবেদনশীল। আমাদের স্থাপত্যের মূল ভিত্তি হলো <strong>শুরু থেকেই পূর্ণাঙ্গ গোপনীয়তা (Privacy by Design)</strong>: weightnote একটি অফলাইন-ফার্স্ট ইউটিলিটি যা সম্পূর্ণভাবে আপনার নিজস্ব ডিভাইসে কাজ করে। আমরা আপনার কোনো বাণিজ্যিক রেকর্ড বা তথ্য সংগ্রহ, বিক্রয়, মনিটাইজ বা কোনো তৃতীয় পক্ষের কাছে হস্তান্তর করি না।
                 </p>
               </>
             ) : (
               <>
                 <p>
-                  This Privacy Policy explains how <strong>Algoel Technologies</strong> (&quot;Algoel&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) handles data in connection with the mobile application <strong>WeighNote (ডিজিটাল ওজন খাতা)</strong> (Package ID: <code className="text-emerald-300 font-mono bg-zinc-950 px-1.5 py-0.5 rounded border border-white/10">com.algoel.weight_note</code>).
+                  This Privacy Policy explains how <strong>Algoel Technologies</strong> (&quot;Algoel&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) handles data in connection with the mobile application <strong>weightnote (ডিজিটাল ওজন খাতা)</strong> (Package ID: <code className="text-emerald-300 font-mono bg-zinc-950 px-1.5 py-0.5 rounded border border-white/10">com.algoel.weightnote</code>).
                 </p>
                 <p>
-                  WeighNote is specifically engineered for wholesale commodities, livestock, poultry markets, grain trading, fisheries, agriculture, and batch scale measurements. In commercial and agricultural trade, business confidentiality—such as commodity weights, pricing agreements, customer records, and supplier transactions—is critically sensitive. Our foundational architectural principle is <strong>absolute privacy by design</strong>: WeighNote is an offline-first utility that operates strictly on your device. We do not collect, monetize, analyze, or broker your trade records.
+                  weightnote is specifically engineered for wholesale commodities, livestock, poultry markets, grain trading, fisheries, agriculture, and batch scale measurements. In commercial and agricultural trade, business confidentiality—such as commodity weights, pricing agreements, customer records, and supplier transactions—is critically sensitive. Our foundational architectural principle is <strong>absolute privacy by design</strong>: weightnote is an offline-first utility that operates strictly on your device. We do not collect, monetize, analyze, or broker your trade records.
                 </p>
               </>
             )}
@@ -274,8 +274,8 @@ export default function WeighNotePrivacyClient() {
             </h2>
             <p>
               {isBn
-                ? 'আপনার বাণিজ্যিক গোপনীয়তা সুরক্ষার স্বার্থে WeighNote কঠোর প্রযুক্তিগত সীমাবদ্ধতা মেনে চলে:'
-                : 'To ensure full sovereignty and confidentiality over your commercial trade, WeighNote operates with strict technical boundaries:'}
+                ? 'আপনার বাণিজ্যিক গোপনীয়তা সুরক্ষার স্বার্থে weightnote কঠোর প্রযুক্তিগত সীমাবদ্ধতা মেনে চলে:'
+                : 'To ensure full sovereignty and confidentiality over your commercial trade, weightnote operates with strict technical boundaries:'}
             </p>
             {isBn ? (
               <ul className="space-y-2.5 pl-2">
@@ -293,7 +293,7 @@ export default function WeighNotePrivacyClient() {
                 </li>
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 mt-0.5 shrink-0" />
-                  <span><strong>ডিভাইস সেন্সরে নজরদারি নেই:</strong> ব্যাকগ্রাউন্ডে মাইক্রোফোন, ক্যামেরা বা আপনার ফোনের কন্টাক্ট তালিকার কোনো অ্যাক্সেস নেওয়া হয় না।</span>
+                  <span><strong>কোনো সেন্সর বা হার্ডওয়্যার পারমিশন নেই:</strong> অ্যাপটি কোনোভাবেই আপনার ক্যামেরা, মাইক্রোফোন, লোকেশন বা ফোনের কন্টাক্ট তালিকার কোনো পারমিশন চায় না বা অ্যাক্সেস করে না।</span>
                 </li>
               </ul>
             ) : (
@@ -316,7 +316,7 @@ export default function WeighNotePrivacyClient() {
                 </li>
                 <li className="flex items-start gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 mt-0.5 shrink-0" />
-                  <span><strong>No Background Surveillance:</strong> We do not access your microphone, camera, or contact address book in the background.</span>
+                  <span><strong>No Camera, Microphone, Location, or Contacts Access:</strong> The app requests zero hardware, sensor, media, or personal-data permissions and does not access your camera, microphone, or contact address book at any time.</span>
                 </li>
               </ul>
             )}
@@ -332,8 +332,8 @@ export default function WeighNotePrivacyClient() {
             </h2>
             <p>
               {isBn
-                ? 'সমস্ত সেশনের তথ্য, ব্যাচ সিরিয়াল, বস্তার সংখ্যা, প্রতি কেজির দর (৳) এবং মণের হিসাব শুধুমাত্র আপনার ডিভাইসের নিজস্ব SQLite ডাটাবেজে (weigh_note.db) সংরক্ষিত থাকে:'
-                : 'All application data is maintained locally using a high-performance SQLite relational database (weigh_note.db):'}
+                ? 'সমস্ত সেশনের তথ্য, ব্যাচ সিরিয়াল, বস্তার সংখ্যা, প্রতি কেজির দর (৳) এবং মণের হিসাব শুধুমাত্র আপনার ডিভাইসের নিজস্ব SQLite ডাটাবেজে (weightnote.db) সংরক্ষিত থাকে:'
+                : 'All application data is maintained locally using a high-performance SQLite relational database (weightnote.db):'}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
               <div className="p-4 rounded-xl bg-zinc-950/60 border border-white/5 space-y-2">
@@ -345,9 +345,11 @@ export default function WeighNotePrivacyClient() {
                   <li><code className="text-zinc-200">id</code>: Unique UUID v4 primary key.</li>
                   <li><code className="text-zinc-200">name</code>: {isBn ? 'সেশনের নাম (যেমন: মুরগি বিক্রয়, আমন ধান)।' : 'Batch or session name.'}</li>
                   <li><code className="text-zinc-200">date</code>: {isBn ? 'সেশনের তারিখ ও সময়।' : 'Session timestamp.'}</li>
+                  <li><code className="text-zinc-200">notes</code>: {isBn ? 'সেশনের ঐচ্ছিক নোট বা মন্তব্য।' : 'Optional session notes.'}</li>
                   <li><code className="text-zinc-200">unit</code>: {isBn ? 'ওজন একক (কেজি, মণ, পাউন্ড, টন)।' : 'Measurement unit (kg, mon, lbs, ton).'}</li>
                   <li><code className="text-zinc-200">unit_price</code>: {isBn ? 'প্রতি এককের নির্ধারিত দর (৳)।' : 'Negotiated unit price rate (৳).'}</li>
-                  <li><code className="text-zinc-200">is_completed</code>: {isBn ? 'সম্পন্ন বা চলমান স্ট্যাটাস।' : 'Finalized session flag.'}</li>
+                  <li><code className="text-zinc-200">total_weight, total_pieces, total_entries</code>: {isBn ? 'স্বয়ংক্রিয়ভাবে হিসাবকৃত মোট ওজন, পিস ও এন্ট্রি সংখ্যা।' : 'Aggregated session weight, pieces, and entry counts.'}</li>
+                  <li><code className="text-zinc-200">is_completed, created_at, updated_at</code>: {isBn ? 'সম্পন্ন স্ট্যাটাস ও তৈরির/আপডেটের সময়।' : 'Completion status and audit timestamps.'}</li>
                 </ul>
               </div>
 
@@ -360,16 +362,17 @@ export default function WeighNotePrivacyClient() {
                   <li><code className="text-zinc-200">id</code>: Unique entry UUID v4.</li>
                   <li><code className="text-zinc-200">session_id</code>: Foreign key linked to session.</li>
                   <li><code className="text-zinc-200">serial_number</code>: {isBn ? 'ক্রমিক নম্বর (#০১, #০২...)।' : 'Sequential batch record count.'}</li>
-                  <li><code className="text-zinc-200">weight</code>: {isBn ? 'স্কেল থেকে রেকর্ড করা ওজন।' : 'Recorded scale reading.'}</li>
+                  <li><code className="text-zinc-200">weight</code>: {isBn ? 'রেকর্ড করা ওজন।' : 'Recorded weight measurement.'}</li>
                   <li><code className="text-zinc-200">pieces</code>: {isBn ? 'বস্তা বা পিসের সংখ্যা।' : 'Item count (bags, crates, birds).'}</li>
+                  <li><code className="text-zinc-200">notes</code>: {isBn ? 'এন্ট্রির ঐচ্ছিক নোট।' : 'Optional entry notes.'}</li>
                   <li><code className="text-zinc-200">created_at</code>: {isBn ? 'এন্ট্রি তৈরির সঠিক সময়।' : 'Exact entry timestamp.'}</li>
                 </ul>
               </div>
             </div>
             <p className="text-xs text-zinc-400">
               {isBn
-                ? 'আপনার খামারের নাম বা মোবাইল নম্বর (যা পিডিএফ রিপোর্টে ব্যবহারের জন্য ঐচ্ছিক) শুধুমাত্র আপনার ডিভাইসের নিজস্ব সুরক্ষিত লোকাল স্টোরেজে (SharedPreferences) থাকে এবং কখনোই তা বাহিরে পাঠানো হয় না।'
-                : 'Optional profile information you enter (your business trade name or contact phone for PDF headers) is saved exclusively into your device\'s sandboxed local storage (SharedPreferences) and is never transmitted off your device.'}
+                ? 'আপনার নাম, ঐচ্ছিক খামার/ব্যবসার নাম এবং ঐচ্ছিক মোবাইল নম্বর (যা অ্যাপের অভ্যর্থনা ও পিডিএফ রিপোর্টের হেডারে প্রদর্শনের জন্য ব্যবহৃত হয়) এবং অ্যাপের পছন্দসমূহ (ভাষা, ডিফল্ট ওজন ইউনিট, হ্যাপটিক/টাচ ফিডব্যাক ও সর্বশেষ সক্রিয় সেশন) শুধুমাত্র আপনার ডিভাইসের নিজস্ব সুরক্ষিত লোকাল স্টোরেজে (SharedPreferences) সংরক্ষিত থাকে এবং কখনোই কোনো সার্ভারে পাঠানো হয় না।'
+                : 'Your local profile details (your name, optional business/farm trade name, and optional contact phone used solely for greetings and PDF report headers) along with local app preferences (language, default unit, haptic toggle, and last active session ID) are saved exclusively in your device\'s sandboxed local storage (SharedPreferences) and are never transmitted off your device.'}
             </p>
           </section>
 
@@ -383,8 +386,8 @@ export default function WeighNotePrivacyClient() {
             </h2>
             <p>
               {isBn
-                ? 'WeighNote ডিভাইসের ন্যূনতম সিস্টেম সুবিধা ব্যবহার করে, যা শুধুমাত্র ব্যবহারকারীর সক্রিয় নির্দেশে কাজ করে:'
-                : 'WeighNote requires minimal operating system interactions, each strictly initiated by explicit user command:'}
+                ? 'weightnote ডিভাইসের ন্যূনতম সিস্টেম সুবিধা ব্যবহার করে, যা শুধুমাত্র ব্যবহারকারীর সক্রিয় নির্দেশে কাজ করে:'
+                : 'weightnote requires minimal operating system interactions, each strictly initiated by explicit user command:'}
             </p>
             <div className="space-y-3">
               <div className="p-4 rounded-xl bg-zinc-950/60 border border-white/5 space-y-1">
@@ -398,8 +401,8 @@ export default function WeighNotePrivacyClient() {
                 </div>
                 <p className="text-xs text-zinc-400 leading-relaxed">
                   {isBn
-                    ? 'আপনি যখন পিডিএফ রিপোর্ট বাটনে ট্যাপ করেন, তখন আপনার ডিভাইসের নিজস্ব সিপিইউ (CPU) ব্যবহার করে সম্পূর্ণ অফলাইনে একটি প্রিন্ট-উপযোগী ভেক্টর পিডিএফ তৈরি হয় এবং সরাসরি আপনার ডিভাইসের ডাউনলোড ফোল্ডারে সংরক্ষিত হয়।'
-                    : 'When you tap the PDF Report icon in any weighing session, the app synthesizes a high-resolution, print-ready vector PDF report entirely on your local CPU. The file is saved directly to your device\'s standard Downloads directory.'}
+                    ? 'আপনি যখন পিডিএফ রিপোর্ট বাটনে ট্যাপ করেন, তখন আপনার ডিভাইসের নিজস্ব সিপিইউ (CPU) ও অ্যাপে সংযুক্ত ফন্ট ব্যবহার করে সম্পূর্ণ অফলাইনে অস্থায়ী ক্যাশে একটি প্রিন্ট-উপযোগী ভেক্টর পিডিএফ তৈরি হয়। প্রিভিউ স্ক্রিন থেকে আপনি নিজের ইচ্ছামতো প্রিন্ট, সেভ বা শেয়ার ডায়ালগের মাধ্যমে সংরক্ষণ ও পাঠাতে পারেন (কোনো ব্যাকগ্রাউন্ড নেটওয়ার্ক রিকোয়েস্ট ছাড়াই)।'
+                    : 'When you tap the PDF Report action in any weighing session, the app synthesizes a high-resolution, print-ready vector PDF report entirely on your local CPU using bundled fonts into temporary app cache. From the preview screen, you can choose to print, save, or export the PDF via your device\'s native OS Print/Save dialog or Share Sheet.'}
                 </p>
               </div>
 
@@ -415,7 +418,7 @@ export default function WeighNotePrivacyClient() {
                 <p className="text-xs text-zinc-400 leading-relaxed">
                   {isBn
                     ? 'আপনি যখন কোনো হিসাব বা চালান শেয়ার করতে চান, কেবল তখনই আপনার ফোনের নিজস্ব শেয়ার উইন্ডো ওপেন হয়। আপনি নিজেই নির্ধারণ করেন কোন অ্যাপে (যেমন: WhatsApp, মেসেঞ্জার, ইমেইল বা প্রিন্টার) তা পাঠাবেন।'
-                    : 'When you choose to share a PDF invoice or weighing summary, WeighNote invokes your operating system\'s native share sheet. You retain full control over which external application (WhatsApp, Messenger, Email, or Bluetooth Printer) receives the generated report.'}
+                    : 'When you choose to share a PDF invoice or weighing summary, weightnote invokes your operating system\'s native share sheet. You retain full control over which external application (WhatsApp, Messenger, Email, or Bluetooth Printer) receives the generated report.'}
                 </p>
               </div>
             </div>
@@ -431,8 +434,8 @@ export default function WeighNotePrivacyClient() {
             </h2>
             <p>
               {isBn
-                ? 'ব্যবসায়িক খাতা ও লেনদেনের হিসাবে কোনো ধরনের অনাহূত বিজ্ঞাপন থাকা অনুচিত। WeighNote সম্পূর্ণ বিজ্ঞাপনমুক্ত নীতির ওপর প্রতিষ্ঠিত:'
-                : 'Commercial ledger software must never compromise trade secrets or burden users with intrusive advertisements. WeighNote strictly adheres to a zero-surveillance standard:'}
+                ? 'ব্যবসায়িক খাতা ও লেনদেনের হিসাবে কোনো ধরনের অনাহূত বিজ্ঞাপন থাকা অনুচিত। weightnote সম্পূর্ণ বিজ্ঞাপনমুক্ত নীতির ওপর প্রতিষ্ঠিত:'
+                : 'Commercial ledger software must never compromise trade secrets or burden users with intrusive advertisements. weightnote strictly adheres to a zero-surveillance standard:'}
             </p>
             {isBn ? (
               <ul className="space-y-2 pl-2">
@@ -515,7 +518,7 @@ export default function WeighNotePrivacyClient() {
                 </li>
                 <li className="flex items-start gap-2">
                   <Trash2 className="w-4 h-4 text-amber-400 mt-0.5 shrink-0" />
-                  <span><strong>Complete Removal on Uninstall:</strong> Uninstalling WeighNote instantly removes 100% of the local SQLite database and preferences from your device.</span>
+                  <span><strong>Complete Removal on Uninstall:</strong> Uninstalling weightnote instantly removes 100% of the local SQLite database and preferences from your device.</span>
                 </li>
               </ul>
             )}
@@ -531,8 +534,8 @@ export default function WeighNotePrivacyClient() {
             </h2>
             <p>
               {isBn
-                ? 'WeighNote একটি বাণিজ্যিক হিসাবের অ্যাপ যা ব্যবসায়ী ও খামারীদের জন্য তৈরি। COPPA আইন ও গুগল প্লে নীতিমালা অনুযায়ী:'
-                : 'WeighNote is a general-purpose commercial utility tool designed for traders, farmers, and business operators. In accordance with the Children\'s Online Privacy Protection Act (COPPA) and the Google Play Developer Families Policy:'}
+                ? 'weightnote একটি বাণিজ্যিক হিসাবের অ্যাপ যা ব্যবসায়ী ও খামারীদের জন্য তৈরি। COPPA আইন ও গুগল প্লে নীতিমালা অনুযায়ী:'
+                : 'weightnote is a general-purpose commercial utility tool designed for traders, farmers, and business operators. In accordance with the Children\'s Online Privacy Protection Act (COPPA) and the Google Play Developer Families Policy:'}
             </p>
             {isBn ? (
               <ul className="space-y-2 pl-2">
@@ -582,8 +585,8 @@ export default function WeighNotePrivacyClient() {
             </h2>
             <p>
               {isBn
-                ? 'এই গোপনীয়তা নীতি বা WeighNote-এর অফলাইন ব্যবস্থা সম্পর্কিত যেকোনো প্রশ্ন বা তথ্যের জন্য যোগাযোগ করতে পারেন:'
-                : 'If you have any questions, compliance inquiries, or technical feedback regarding this Privacy Policy or WeighNote\'s offline architecture, please reach out directly:'}
+                ? 'এই গোপনীয়তা নীতি বা weightnote-এর অফলাইন ব্যবস্থা সম্পর্কিত যেকোনো প্রশ্ন বা তথ্যের জন্য যোগাযোগ করতে পারেন:'
+                : 'If you have any questions, compliance inquiries, or technical feedback regarding this Privacy Policy or weightnote\'s offline architecture, please reach out directly:'}
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs">

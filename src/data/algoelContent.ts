@@ -43,8 +43,8 @@ export interface AlgoelSpotlight {
 
 export const ALGOEL_PRODUCTS: AlgoelProduct[] = [
   {
-    id: 'weighnote',
-    name: 'WeighNote (ডিজিটাল ওজন খাতা)',
+    id: 'weightnote',
+    name: 'weightnote (ডিজিটাল ওজন খাতা)',
     tagline: 'Precision Weight Batch Ledger, Auto Maund Conversion & PDF Invoicing',
     category: 'Utilities & Trade',
     released: '2026',
@@ -52,7 +52,7 @@ export const ALGOEL_PRODUCTS: AlgoelProduct[] = [
     invertColor: false,
     rating: '5.0★ Perfect Store Rating',
     downloads: 'New Release',
-    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.algoel.weight_note',
+    playStoreUrl: 'https://play.google.com/store/apps/details?id=com.algoel.weightnote',
     iconSymbol: 'Scale',
     bulletPoints: [
       'Released 2026 • Built with Flutter, BLoC & SQLite Local Storage',
